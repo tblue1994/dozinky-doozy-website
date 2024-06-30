@@ -1,9 +1,5 @@
 import { Footer } from "../components/Footer";
-import { NavBar } from "../components/NavBar";
-import "./home.css";
 
-// TODO: figure out why the body image doesn't load as expected and vice-versa
-// consider using a floating background component vs a background image in CSS
 export default function Layout({
   children,
 }: Readonly<{
@@ -11,9 +7,8 @@ export default function Layout({
 }>) {
   return (
     <>
-      <NavBar textColor="white" />
       {children}
-      <Footer />
+      <Footer showLogo={false} />
     </>
   );
 }

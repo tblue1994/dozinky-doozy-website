@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const Footer = () => {
+export const Footer = ({ showLogo = true }: { showLogo?: boolean }) => {
   return (
-    <footer className="flex items-center">
-      <Image src="/logo_black.svg" alt="Logo" width={100} height={0} />
+    <footer className="flex items-center gap-x-3 py-4">
+      {showLogo && (
+        <Image src="/logo_black.svg" alt="Logo" width={100} height={0} />
+      )}
       <Link href="https://www.instagram.com/dozinkydoozy/" target="_blank">
         <Image src="/instagram.svg" alt="Instagram" width={24} height={0} />
       </Link>
