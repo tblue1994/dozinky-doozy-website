@@ -4,14 +4,14 @@ import { RegisterLink } from "@/app/components/RegisterLink";
 
 export default function Home() {
   return (
-    <main className="text-black">
+    <main className="text-black px-2">
       <div className="text-center my-6">
         <h1 className="w-auto">
           <Image
             priority
             src="/logo_light.svg"
             alt="Dozinky Doozy word mark on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
-            className="w-full"
+            className="w-full -mt-4"
             width={400}
             height={0}
           />
@@ -24,7 +24,7 @@ export default function Home() {
         <h4 className="text-lg">September 28, 2024</h4>
         <p>
           Come join us in riding 120 miles of beautiful gravel in the Bohemian
-          Alps.
+          Alps of Prague, Nebraska.
         </p>
         <div className="my-4">
           <RegisterLink className="text-xl" />

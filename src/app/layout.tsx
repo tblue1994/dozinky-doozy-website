@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "dozinky doozy",
     "gravel race",
     "gravel quest",
+    "prague",
+    "nebraska",
+    "prague nebraska",
   ],
   publisher: "Gravel Quest LLC",
   openGraph: {
