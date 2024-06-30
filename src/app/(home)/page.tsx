@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { lusitana } from "../ui/fonts";
+import { metamorphous } from "../ui/fonts";
 import { RegisterLink } from "@/app/components/RegisterLink";
 
 export default function Home() {
@@ -15,13 +15,16 @@ export default function Home() {
             height={0}
           />
         </h1>
-        <h2 className={`${lusitana.className} text-4xl mt-[-2rem]`}>
+        <h2 className={`${metamorphous.className} text-4xl -mt-8 uppercase`}>
           Reap What You Sow
         </h2>
       </div>
       <div className="text-center">
         <h4 className="text-lg">September 28, 2024</h4>
-        <p>Some description about the super cool event!</p>
+        <p>
+          Come join us in riding 120 miles of beautiful gravel in the Bohemian
+          Alps of Prague, Nebraska.
+        </p>
         <div className="my-4">
           <RegisterLink className="text-xl" />
         </div>
