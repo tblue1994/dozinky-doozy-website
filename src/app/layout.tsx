@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { fira } from "./ui/fonts";
 import "./globals.css";
 
+const description =
+  "Come join us in riding 120 miles of beautiful gravel in the Bohemian Alps.";
 export const metadata: Metadata = {
   title: "Dozinky Doozy",
-  description: "It's a bicycle race!",
+  description: description,
   keywords: [
     "bike",
     "bikes",
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://dozinkydoozy.com",
-    description: "we'll be riding on gravel",
+    description: description,
   },
 };
 
