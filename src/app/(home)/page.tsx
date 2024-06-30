@@ -1,38 +1,44 @@
 import Image from "next/image";
-import { metamorphous } from "../ui/fonts";
+import { lusitana } from "../ui/fonts";
 import { RegisterLink } from "@/app/components/RegisterLink";
 
 export default function Home() {
   return (
-    <main className="text-black px-2">
+    <main className="text-white">
       <div className="text-center my-6">
-        <h1 className="w-auto">
+        <h1>
           <Image
             priority
             src="/logo_light.svg"
-            alt="Dozinky Doozy word mark on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
-            className="w-full -mt-4"
+            alt="Dozinky Doozy words on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
             width={400}
             height={0}
           />
         </h1>
-        <h2 className={`${metamorphous.className} text-4xl -mt-8 uppercase`}>
+        <h2 className={`${lusitana.className} text-4xl mt-[-2rem]`}>
           Reap What You Sow
         </h2>
       </div>
       <div className="text-center">
         <h4 className="text-lg">September 28, 2024</h4>
-        <p>
-          Come join us in riding 120 miles of beautiful gravel in the Bohemian
-          Alps of Prague, Nebraska.
-        </p>
+        <p>Some description about the super cool event!</p>
         <div className="my-4">
           <RegisterLink className="text-xl" />
         </div>
-        <br />
-        <p className="text-xs italic">
-          Site under construction. Check back later for more details.
-        </p>
+      </div>
+      <div className="text-center">
+        <h3 className="text-2xl">Sponsors</h3>
+      </div>
+      <div>
+        <p>Dozinky def</p>
+        <Image src="/dozynki.jpg" alt="Dozinky" width={400} height={0} />
+        <p>Doozy def</p>
+        <Image
+          src="/harvest_festival.jpg"
+          alt="Harvest Festival"
+          width={400}
+          height={0}
+        />
       </div>
     </main>
   );
