@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { bodyText } from "./ui/fonts";
 import "./globals.css";
+import { NavBar } from "./components/NavBar";
 
 const description =
   "Come join us in riding 120 miles of beautiful gravel in the Bohemian Alps.";
@@ -38,9 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bodyText.className}>
-        <div className="flex flex-col h-screen w-screen justify-between items-center">
+        {children}
+        {/*<div className="flex flex-col h-screen w-screen justify-between items-center">
           {children}
-        </div>
+        </div>*/}
       </body>
     </html>
   );

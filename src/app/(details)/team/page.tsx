@@ -1,5 +1,6 @@
 import { headerText } from "@/app/ui/fonts";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Team() {
   return (

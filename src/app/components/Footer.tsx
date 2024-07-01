@@ -17,8 +17,8 @@ export const Footer = () => {
             className="w-auto h-7"
             src="/instagram.png"
             alt="Instagram"
-            width={4322}
-            height={4322}
+            width={60}
+            height={60}
           />
         </Link>
         <Link
@@ -29,8 +29,8 @@ export const Footer = () => {
             className="w-auto h-7"
             src="/facebook.png"
             alt="Facebook"
-            width={2084}
-            height={2084}
+            width={60}
+            height={60}
           />
         </Link>
       </div>

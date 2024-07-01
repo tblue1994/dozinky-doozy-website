@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const LogoTagline = () => {
   return (
-    <div className="flex flex-col h-auto">
+    <div className="flex flex-col h-auto  pt-16 pb-4 bg-gravel-roads bg-cover bg-white bg-blend-lighten bg-opacity-15">
       <h1>
         <Image
           priority

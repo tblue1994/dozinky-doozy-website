@@ -8,9 +8,10 @@ export default function Layout({
 }>) {
   return (
     <>
-      {/*<NavBar textColor="white" />*/}
-      <NavBar textColor="black" />
-      {children}
+      <div className="absolute top-0 left-0 right-0">
+        <NavBar textColor="white" />
+      </div>
+      <main>{children}</main>
       <Footer />
     </>
   );

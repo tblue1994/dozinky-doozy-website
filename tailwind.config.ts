@@ -70,7 +70,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        "gravel-roads": "url('/background.jpg')",
+        "gravel-roads": "url('/background.webp')",
       },
     },
   },
