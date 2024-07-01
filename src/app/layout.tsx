@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { fira } from "./ui/fonts";
+import { bodyText } from "./ui/fonts";
 import "./globals.css";
 
 const description =
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fira.className}>
+      <body className={bodyText.className}>
         <div className="flex flex-col h-screen w-screen justify-between items-center">
           {children}
         </div>

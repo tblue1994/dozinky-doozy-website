@@ -1,5 +1,5 @@
 import { LodgingItem } from "@/app/components/LodingItem";
-import { germania } from "@/app/ui/fonts";
+import { headerText } from "@/app/ui/fonts";
 import Link from "next/link";
 
 const hotels20 = [
@@ -38,7 +38,7 @@ const h3ClassNames = "text-xl";
 export default function Hotels() {
   return (
     <div className="flex flex-col gap-6">
-      <h1 className={`${germania.className} text-4xl`}>Hotels and Camping</h1>
+      <h1 className={`${headerText.className} text-4xl`}>Hotels and Camping</h1>
       <section>
         <h2 className={h2ClassNames}>Camping</h2>
         <p>
@@ -56,7 +56,7 @@ export default function Hotels() {
       <section>
         <h2 className={h2ClassNames}>Hotels</h2>
         Here are some nearby hotels:
-      <h3 className={`${h3ClassNames} mt-4`}>~20 Minute Drive</h3>
+        <h3 className={`${h3ClassNames} mt-4`}>~20 Minute Drive</h3>
         <ul>
           {hotels20.map((h) => (
             <li key={h.name} className="my-4">

@@ -21,15 +21,17 @@ export const Route = (props: RouteProps) => {
   } = props;
   const iframeClassNames = clsx("w-full h-96 overflow-hidden", iframeClassName);
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
-      <h2 className="text-3xl font-bold">{routeTitle}</h2>
+    <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div>
+        <h2 className="text-2xl font-bold">{routeTitle}</h2>
+        <p className="text-lg">{routeDescription}</p>
+      </div>
       <iframe
         src={routeIframeSrc}
         title={`Map for ${routeTitle} route`}
         className={iframeClassNames}
         {...rest}
       />
-      <p className="text-lg">{routeDescription}</p>
     </div>
   );
 };

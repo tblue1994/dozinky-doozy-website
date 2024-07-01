@@ -1,4 +1,4 @@
-import { germania } from "@/app/ui/fonts";
+import { headerText } from "@/app/ui/fonts";
 import Image from "next/image";
 
 export default function Team() {
@@ -18,7 +18,9 @@ export default function Team() {
         <div>
           <span>
             <h2 className="text-base font-semibold uppercase">Organizer</h2>
-            <h1 className={`${germania.className} text-4xl`}>Trevor Slawnyk</h1>
+            <h1 className={`${headerText.className} text-4xl`}>
+              Trevor Slawnyk
+            </h1>
           </span>
 
           <h3 className="text-xl">
