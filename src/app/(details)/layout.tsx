@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <>
       <NavBar />
-      <main className="p-8">{children}</main>
+      <main className="p-8 mx-auto max-w-screen-lg">{children}</main>
       <Footer />
     </>
   );
