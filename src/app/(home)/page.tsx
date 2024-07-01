@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <LogoTagline />
       <div className="p-8">
-        <div className="text-center my-12">
+        <div className="text-center mb-12">
           <h3 className="text-xl mt-2">Saturday, September 28, 2024</h3>
           <p className="text-lg mb-2">
             <Link
