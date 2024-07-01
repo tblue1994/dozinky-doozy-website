@@ -26,7 +26,3 @@ body {
     text-wrap: balance;
   }
 }
-
-* {
-  z-index: -1;
-}

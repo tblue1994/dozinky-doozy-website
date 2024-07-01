@@ -1,25 +1,34 @@
 import Image from "next/image";
-import { metamorphous } from "../ui/fonts";
 import { RegisterLink } from "@/app/components/RegisterLink";
 import { LogoTagline } from "../components/LogoTagline";
 import { Definition } from "../components/Definition";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="p-8">
+    <main className="px-8">
       <div className="text-center">
-        <Image
+        {/*<Image
           src="/background.jpg"
           alt="A gravel road surrounded by fields that turns into a rolling hill in the distance."
           width={2048}
           height={1367}
-          className="absolute right-0 top-0 z-1000"
+          className="absolute right-0 top-0 z-100"
           priority
-        />
+        /> */}
         <LogoTagline />
       </div>
-      <div className="text-center flex flex-col gap-4">
-        <h4 className="text-xl mt-2">September 28, 2024</h4>
+      <div className="text-center my-12">
+        <h4 className="text-xl mt-2">Saturday, September 28, 2024</h4>
+        <p className="text-lg mb-2">
+          <Link
+            href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
+            target="_blank"
+            className="hover:text-venetian-red-700"
+          >
+            Czechland Lake Recreation Area
+          </Link>
+        </p>
         <p>
           Come join us in riding 120 miles of beautiful gravel in the Bohemian
           Alps of Prague, Nebraska.

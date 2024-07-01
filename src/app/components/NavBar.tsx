@@ -10,7 +10,7 @@ export const NavBar = ({
   const linkClassNames = `mx-2 text-${textColor} hover:underline`;
   return (
     <nav className="flex shrink-0 items-center px-4 w-full z-10">
-      <Link href="\" className="mr-auto">
+      <Link href="\" className="mr-auto hover:opacity-85">
         <Image
           priority
           src={`/wordmark_${textColor}.svg`}

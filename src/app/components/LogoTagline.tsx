@@ -10,10 +10,10 @@ export const LogoTagline = () => {
           alt="Dozinky Doozy words on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
           width={4501}
           height={4501}
-          className="w-2/3 h-auto mx-auto my-[-10%]"
+          className="w-2/3 h-auto mx-auto my-[-10%] z-1000"
         />
       </h1>
-      <h2 className="text-4xl uppercase w-3/4 mx-auto">
+      <h2 className="text-4xl uppercase w-2/3 mx-auto">
         <Image
           priority
           src="/tagline.png"
