@@ -1,4 +1,4 @@
-import { LodgingItem } from "@/app/components/LodingItem";
+import { LodgingItem } from "@/app/components/LodgingItem";
 import { headerText } from "@/app/ui/fonts";
 import Link from "next/link";
 
