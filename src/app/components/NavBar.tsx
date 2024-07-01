@@ -9,7 +9,7 @@ export const NavBar = ({
 }) => {
   const linkClassNames = `mx-2 text-${textColor} hover:underline`;
   return (
-    <nav className="flex shrink-0 items-center px-4 w-full">
+    <nav className="flex shrink-0 items-center px-4 w-full z-10">
       <Link href="\" className="mr-auto">
         <Image
           priority
@@ -17,13 +17,14 @@ export const NavBar = ({
           alt="Logo"
           width={120}
           height={120}
+          className="my-[-16%]"
         />
       </Link>
       <Link href="/routes" className={linkClassNames}>
         Routes
       </Link>
       <Link href="/team" className={linkClassNames}>
-        The Team
+        Team
       </Link>
       <Link href="/lodging" className={linkClassNames}>
         Lodging

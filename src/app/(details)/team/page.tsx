@@ -9,8 +9,8 @@ export default function Team() {
           src="/organizer.webp"
           alt="Organizer Trevor Slawnyk on a black gravel bike as he finishes a gravel race."
           className="w-auto"
-          width={1600}
-          height={0}
+          width={2048}
+          height={2149}
           priority
         />
       </div>
