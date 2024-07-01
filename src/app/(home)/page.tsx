@@ -11,7 +11,7 @@ export default function Home() {
             priority
             src="/logo_light.svg"
             alt="Dozinky Doozy words on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
-            width={400}
+            width={1200}
             height={0}
           />
         </h1>

@@ -10,7 +10,7 @@ export default function Layout({
   return (
     <>
       <NavBar />
-      {children}
+      <main className="p-8">{children}</main>
       <Footer />
     </>
   );

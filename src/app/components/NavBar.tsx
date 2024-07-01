@@ -2,13 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { RegisterLink } from "./RegisterLink";
 
-// TODO: hover states
 export const NavBar = ({
   textColor = "black",
 }: {
   textColor?: "white" | "black";
 }) => {
-  const linkClassNames = `mx-2 text-${textColor}`;
+  const linkClassNames = `mx-2 text-${textColor} hover:underline`;
   return (
     <nav className="flex shrink-0 items-center px-4 w-full">
       <Link href="\" className="mr-auto">
@@ -24,10 +23,10 @@ export const NavBar = ({
         Routes
       </Link>
       <Link href="/team" className={linkClassNames}>
-        Team
+        The Team
       </Link>
-      <Link href="/hotels" className={linkClassNames}>
-        Hotels
+      <Link href="/lodging" className={linkClassNames}>
+        Lodging
       </Link>
       <RegisterLink />
     </nav>
