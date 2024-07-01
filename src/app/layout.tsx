@@ -38,12 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bodyText.className}>
-        {children}
-        {/*<div className="flex flex-col h-screen w-screen justify-between items-center">
-          {children}
-        </div>*/}
-      </body>
+      <body className={bodyText.className}>{children}</body>
     </html>
   );
 }

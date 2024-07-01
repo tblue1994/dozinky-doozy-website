@@ -19,9 +19,12 @@ export const Route = (props: RouteProps) => {
     iframeClassName,
     ...rest
   } = props;
-  const iframeClassNames = clsx("w-full h-96 overflow-hidden", iframeClassName);
+  const iframeClassNames = clsx(
+    "w-full h-96 overflow-hidden col-span-2",
+    iframeClassName
+  );
   return (
-    <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
       <div>
         <h2 className="text-2xl font-bold">{routeTitle}</h2>
         <p className="text-lg">{routeDescription}</p>

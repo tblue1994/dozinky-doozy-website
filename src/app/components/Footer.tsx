@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center pb-4">
+    <footer className="flex flex-col w-full items-center pb-4">
       <Image
         src={"/logo_black.svg"}
         alt="Logo"

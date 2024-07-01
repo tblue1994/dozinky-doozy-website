@@ -9,7 +9,7 @@ const trainingRoutes = [
       "https://ridewithgps.com/embeds?type=route&id=46191801&sampleGraph=true",
   },
 ];
-const routeIframeClassName = "w-px min-w-full border-none";
+const routeIframeClassName = "border-none";
 export default function Routes() {
   return (
     <div className="flex flex-col gap-6">

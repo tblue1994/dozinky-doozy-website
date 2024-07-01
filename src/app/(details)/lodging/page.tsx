@@ -35,9 +35,9 @@ const hotels40 = [
 const h2ClassNames = "text-2xl";
 const h3ClassNames = "text-xl";
 
-export default function Hotels() {
+export default function Lodging() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-fit mx-auto">
       <h1 className={`${headerText.className} text-4xl`}>Hotels and Camping</h1>
       <section>
         <h2 className={h2ClassNames}>Camping</h2>
