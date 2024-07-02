@@ -9,9 +9,11 @@ export default function Home() {
     <>
       <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl mt-2">Saturday, September 28, 2024, 8 AM</h1>
-          <h2 className="text-2xl my-2">
+        <div className="text-justify mb-16">
+          <h1 className="text-3xl mt-2 text-center">
+            Saturday, September 28, 2024, 8 AM
+          </h1>
+          <h2 className="text-2xl my-2 text-center">
             <Link
               href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
               target="_blank"
@@ -20,24 +22,33 @@ export default function Home() {
               Czechland Lake Recreation Area, Prague, NE
             </Link>
           </h2>
-          <p>
-            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Challenge through the stunning Bohemian Alps, located north of Lincoln, NE. The route consists of three unique 40-mile loops, each starting and ending at Czechland Lake. 
-            Your journey will take you down dirt roads, over steep hills, into the Platte River valley. You will have 10 hours to complete the Doozy.
+          <p className="my-2">
+            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Challenge
+            through the stunning Bohemian Alps, located north of Lincoln, NE.
+            The route consists of three unique 40-mile loops, each starting and
+            ending at Czechland Lake. Your journey will take you down dirt
+            roads, over steep hills, and into the Platte River valley. You will
+            have 10 hours to complete the Doozy.
           </p>
-          <p>
-            This event is designed to challenge and inspire you. Finishing the Dozinky Doozy will be an accomplishment you can be proud of. Remember, harvest is a time to reap what you sow. 
-            What seeds will you sow this year? Embrace the challenge and join us for an unforgettable adventure!Remember, harvest is a time to reap what you sow. What seeds will you sow this year? Embrace the challenge and join us for an unforgettable adventure!
+          <p className="my-2">
+            This event is designed to challenge and inspire you. Finishing the
+            Dozinky Doozy will be an accomplishment you can be proud of.
+            Remember, harvest is a time to reap what you sow. What seeds will
+            you sow this year? Embrace the challenge and join us for an
+            unforgettable adventure!
           </p>
-          <p>
-            $50 registration fee includes:
-          </p>
-          <ul>
+          <h3 className="my-3 text-lg">$50 registration fee includes:</h3>
+          <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
             <li>Post ride meal and beverages</li>
-            <li>Awesome Finsher Patches for all Doozy Finishers</li>
-            <li>Custom award for "unofficial" 1st place</li>
-            <li>Fully stocked checkpoint at Czechland Lake and a limited SAG stop on each loop</li>
-          </ul> 
-          <div className="my-4">
+            <li>Awesome Finisher Patches for all Doozy Finishers</li>
+            <li>Custom award for &quot;unofficial&quot; 1st place</li>
+            <li>
+              Fully stocked checkpoint at Czechland Lake and a limited SAG stop
+              on each loop
+            </li>
+            <li>And more to come!</li>
+          </ul>
+          <div className="mt-8 mb-4 w-fit mx-auto">
             <RegisterLink className="text-xl">2024 Registration</RegisterLink>
           </div>
         </div>
@@ -66,7 +77,7 @@ export default function Home() {
               word="Doozy"
               pronunciation="DOO-zee"
               partOfSpeech="noun"
-              definition="Something that is extraordinary or outstanding of its kind. I won't gonna sugar coat it, this one's going to be a challenge! However, you can't truly achieve something without a chance of failure. I believe you have what it takes. Do you?"
+              definition="Something that is extraordinary or outstanding of its kind. I won't sugar coat it, this one's going to be a challenge! However, you can't truly achieve something without a chance of failure. I believe you have what it takes. Do you?"
               className="h-full flex flex-col justify-center"
             />
           </div>
