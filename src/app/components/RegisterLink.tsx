@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 
 export function RegisterLink({
-  children = "Registration",
+  children = "Register",
   className = "",
 }: {
   children?: ReactNode;
