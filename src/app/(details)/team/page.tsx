@@ -29,9 +29,12 @@ export default function Team() {
           </h3>
         </div>
         <p>
-          I started the Doozy in 2024 after the Sto Mil called it quits. The
-          Bohemian Alps are such an iconic part of my gravel journey, I just
-          knew there needed to be an event out here!
+            Started the Doozy in 2024. I love all things gravel, and the Bohemian Alps are no exception. 
+            I rode one of my first gravel events in the Alps and was smitten with the area. 
+            These roads are just so iconic - I knew we had to keep an event out here. 
+        </p>
+        <p>
+            I hope you find the Alps as enchanting as I do!
         </p>
       </div>
     </div>

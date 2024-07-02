@@ -20,7 +20,7 @@ export const Route = (props: RouteProps) => {
     ...rest
   } = props;
   const iframeClassNames = clsx(
-    "w-full h-96 overflow-hidden col-span-2",
+    "w-full h-[600px] overflow-hidden col-span-2",
     iframeClassName
   );
   return (

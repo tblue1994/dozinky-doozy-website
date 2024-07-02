@@ -3,10 +3,11 @@ import { headerText } from "@/app/ui/fonts";
 
 const trainingRoutes = [
   {
-    routeTitle: "A training route",
-    routeDescription: "Get a taste of the Bohemian Alps.",
+    routeTitle: "2018 Gravel Worlds Privateer Route",
+    routeDescription: `Stating and ending in Fallbrook, this sneakily challenging route goes through the southern Bohemian Alps. Its just a touch too far for one of our 40 mile loops. 
+    Ride up through Loma, NE (which was featured in To Wong Foo, Thanks for Everything! Julie Newmar). County Road D to Valpraiso is home to a stretch of large hills.`,
     routeIframeSrc:
-      "https://ridewithgps.com/embeds?type=route&id=46191801&sampleGraph=true",
+      "https://ridewithgps.com/embeds?type=route&id=28345766&sampleGraph=true",
   },
 ];
 const routeIframeClassName = "border-none";
