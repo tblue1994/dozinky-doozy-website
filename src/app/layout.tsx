@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { bodyText } from "./ui/fonts";
 import "./globals.css";
 import { NavBar } from "./components/NavBar";
+import clsx from "clsx";
 
 const description =
   "Come join us in riding 120 miles of beautiful gravel in the Bohemian Alps.";
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
+const bodyClassNames = clsx(bodyText.className, "");
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bodyText.className}>{children}</body>
+      <body className={bodyClassNames}>{children}</body>
     </html>
   );
 }

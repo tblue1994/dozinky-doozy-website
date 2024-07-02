@@ -1,17 +1,17 @@
 import Image from "next/image";
 import { RegisterLink } from "@/app/components/RegisterLink";
-import { LogoTagline } from "../components/LogoTagline";
+import { LogoTaglineHeader } from "../components/LogoTagline";
 import { Definition } from "../components/Definition";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <LogoTagline />
+      <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
         <div className="text-center mb-12">
-          <h3 className="text-xl mt-2">Saturday, September 28, 2024, 8 AM</h3>
-          <p className="text-lg mb-2">
+          <h1 className="text-3xl mt-2">Saturday, September 28, 2024, 8 AM</h1>
+          <h2 className="text-2xl my-2">
             <Link
               href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
               target="_blank"
@@ -19,7 +19,7 @@ export default function Home() {
             >
               Czechland Lake Recreation Area
             </Link>
-          </p>
+          </h2>
           <p>
             Come join us in riding 120 miles of beautiful gravel in the Bohemian
             Alps of Prague, Nebraska.

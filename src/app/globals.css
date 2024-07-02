@@ -5,6 +5,9 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 253, 245;
+  @media (min-width: theme(screens.md)) {
+    font-size: 18px;
+  }
 }
 
 /*
