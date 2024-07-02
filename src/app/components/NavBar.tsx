@@ -2,22 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { RegisterLink } from "./RegisterLink";
 
-// TODO: hover states
 export const NavBar = ({
   textColor = "black",
 }: {
   textColor?: "white" | "black";
 }) => {
-  const linkClassNames = `mx-2 text-${textColor}`;
+  const linkClassNames = `mx-2 text-${textColor} hover:underline`;
   return (
-    <nav className="flex shrink-0 items-center px-4 w-full">
-      <Link href="\" className="mr-auto">
+    <nav className="flex shrink-0 items-center pt-1 px-4 w-full z-10">
+      <Link href="\" className="mr-auto hover:opacity-85">
         <Image
           priority
           src={`/wordmark_${textColor}.svg`}
           alt="Logo"
           width={120}
           height={120}
+          className="my-[-16%]"
         />
       </Link>
       <Link href="/routes" className={linkClassNames}>
@@ -26,10 +26,10 @@ export const NavBar = ({
       <Link href="/team" className={linkClassNames}>
         Team
       </Link>
-      <Link href="/hotels" className={linkClassNames}>
-        Hotels
+      <Link href="/lodging" className={linkClassNames}>
+        Lodging
       </Link>
-      <RegisterLink />
+      <RegisterLink className="ml-2" />
     </nav>
   );
 };

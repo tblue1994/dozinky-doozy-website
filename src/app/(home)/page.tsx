@@ -1,39 +1,95 @@
 import Image from "next/image";
-import { metamorphous } from "../ui/fonts";
 import { RegisterLink } from "@/app/components/RegisterLink";
+import { LogoTaglineHeader } from "../components/LogoTagline";
+import { Definition } from "../components/Definition";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="text-black px-2">
-      <div className="text-center my-6">
-        <h1 className="w-auto">
-          <Image
-            priority
-            src="/logo_light.svg"
-            alt="Dozinky Doozy word mark on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
-            className="w-full -mt-4"
-            width={400}
-            height={0}
-          />
-        </h1>
-        <h2 className={`${metamorphous.className} text-4xl -mt-8 uppercase`}>
-          Reap What You Sow
-        </h2>
-      </div>
-      <div className="text-center">
-        <h4 className="text-lg">September 28, 2024</h4>
-        <p>
-          Come join us in riding 120 miles of beautiful gravel in the Bohemian
-          Alps of Prague, Nebraska.
-        </p>
-        <div className="my-4">
-          <RegisterLink className="text-xl" />
+    <>
+      <LogoTaglineHeader />
+      <div className="p-8 max-w-screen-lg mx-auto">
+        <div className="text-justify mb-16">
+          <h1 className="text-3xl mt-2 text-center">
+            Saturday, September 28, 2024, 8 AM
+          </h1>
+          <h2 className="text-2xl my-2 text-center">
+            <Link
+              href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
+              target="_blank"
+              className="hover:text-venetian-red-700"
+            >
+              Czechland Lake Recreation Area, Prague, NE
+            </Link>
+          </h2>
+          <p className="my-2">
+            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Challenge
+            through the stunning Bohemian Alps, located north of Lincoln, NE.
+            The route consists of three unique 40-mile loops, each starting and
+            ending at Czechland Lake. Your journey will take you down dirt
+            roads, over steep hills, and into the Platte River valley. You will
+            have 10 hours to complete the Doozy.
+          </p>
+          <p className="my-2">
+            This event is designed to challenge and inspire you. Finishing the
+            Dozinky Doozy will be an accomplishment you can be proud of.
+            Remember, harvest is a time to reap what you sow. What seeds will
+            you sow this year? Embrace the challenge and join us for an
+            unforgettable adventure!
+          </p>
+          <h3 className="my-3 text-lg">$50 registration fee includes:</h3>
+          <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
+            <li>Post ride meal and beverages</li>
+            <li>Awesome Finisher Patches for all Doozy Finishers</li>
+            <li>Custom award for &quot;unofficial&quot; 1st place</li>
+            <li>
+              Fully stocked checkpoint at Czechland Lake and a limited SAG stop
+              on each loop
+            </li>
+            <li>And more to come!</li>
+          </ul>
+          <div className="mt-8 mb-4 w-fit mx-auto">
+            <RegisterLink className="text-xl">2024 Registration</RegisterLink>
+          </div>
         </div>
-        <br />
-        <p className="text-xs italic">
-          Site under construction. Check back later for more details.
-        </p>
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+          <div className="col-span-1">
+            <Definition
+              word="Dozinky"
+              pronunciation="doh-ZHIN-kee"
+              partOfSpeech="noun"
+              definition="A Slavic harvest festival celebrated across Central and Eastern
+                Europe with a variety of customs and traditions. One thing that all
+                of these festivals celebrate is the culmination of a hard
+                year's work and the rewards gained in return."
+              className="h-full flex flex-col justify-center"
+            />
+          </div>
+          <Image
+            src="/harvest_festival.webp"
+            alt="Harvest Festival"
+            width={2059}
+            height={1433}
+            className="col-span-1"
+          />
+          <div className="col-span-1 md:order-last">
+            <Definition
+              word="Doozy"
+              pronunciation="DOO-zee"
+              partOfSpeech="noun"
+              definition="Something that is extraordinary or outstanding of its kind. I won't sugar coat it, this one's going to be a challenge! However, you can't truly achieve something without a chance of failure. I believe you have what it takes. Do you?"
+              className="h-full flex flex-col justify-center"
+            />
+          </div>
+          <Image
+            src="/dozynki.webp"
+            alt="Harvest Festival"
+            width={2059}
+            height={1433}
+            className="col-span-1"
+          />
+        </div>
       </div>
-    </main>
+    </>
   );
 }
