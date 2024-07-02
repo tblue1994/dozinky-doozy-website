@@ -7,7 +7,7 @@ const trainingRoutes = [
     routeTitle: "2018 Gravel Worlds Privateer Route",
     routeDescription: (
       <>
-        Stating and ending in Fallbrook, this sneakily challenging route goes
+        Starting and ending in Fallbrook, this sneakily challenging route goes
         through the southern Bohemian Alps. It&apos;s just a touch too far for
         one of our 40 mile loops. Ride up through Loma, NE (
         <Link
@@ -20,7 +20,7 @@ const trainingRoutes = [
             To Wong Foo, Thanks for Everything! Julie Newmar
           </span>
         </Link>
-        ). County Road D to Valpraiso is home to a stretch of large hills.
+        ). County Road D to Valparaiso is home to a stretch of large hills.
       </>
     ),
     routeIframeSrc:

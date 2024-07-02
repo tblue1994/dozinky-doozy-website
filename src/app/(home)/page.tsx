@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <LogoTagline />
-      <div className="p-8">
+      <div className="p-8 max-w-screen-lg mx-auto">
         <div className="text-center mb-12">
           <h3 className="text-xl mt-2">Saturday, September 28, 2024, 8 AM</h3>
           <p className="text-lg mb-2">
@@ -35,20 +35,30 @@ export default function Home() {
               pronunciation="doh-ZHIN-kee"
               partOfSpeech="noun"
               definition="A Slavic harvest festival celebrated across Central and Eastern
-            Europe with a Variety of customs and traditions. One thing that all
-            of these festivals celebrate is the culmination of a hard
-            year's work and the rewards gained in return."
-              className="my-4"
+                Europe with a Variety of customs and traditions. One thing that all
+                of these festivals celebrate is the culmination of a hard
+                year's work and the rewards gained in return."
+              className="h-full flex flex-col justify-center"
             />
+          </div>
+          <Image
+            src="/harvest_festival.webp"
+            alt="Harvest Festival"
+            width={2059}
+            height={1433}
+            className="col-span-1"
+          />
+          <div className="col-span-1 md:order-last">
             <Definition
               word="Doozy"
               pronunciation="DOO-zee"
               partOfSpeech="noun"
               definition="Something that is extraordinary or outstanding of its kind. I won't gonna sugar coat it, this one's going to be a challenge! However, you can't truly achieve something without a chance of failure. I believe you have what it takes. Do you?"
+              className="h-full flex flex-col justify-center"
             />
           </div>
           <Image
-            src="/harvest_festival.webp"
+            src="/dozynki.webp"
             alt="Harvest Festival"
             width={2059}
             height={1433}

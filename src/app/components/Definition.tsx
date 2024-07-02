@@ -13,8 +13,8 @@ export const Definition = ({
 }) => {
   return (
     <div className={className}>
-      <h4 className="inline-block text-lg">{word}</h4>
       <span>
+        <h4 className="inline-block text-lg">{word}</h4>
         &nbsp;({pronunciation}) <em>{partOfSpeech}</em>
       </span>
       <p>{definition}</p>
