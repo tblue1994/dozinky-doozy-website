@@ -1,11 +1,28 @@
 import { Route } from "@/app/components/Route";
 import { headerText } from "@/app/ui/fonts";
+import Link from "next/link";
 
 const trainingRoutes = [
   {
     routeTitle: "2018 Gravel Worlds Privateer Route",
-    routeDescription: `Stating and ending in Fallbrook, this sneakily challenging route goes through the southern Bohemian Alps. Its just a touch too far for one of our 40 mile loops. 
-    Ride up through Loma, NE (which was featured in To Wong Foo, Thanks for Everything! Julie Newmar). County Road D to Valpraiso is home to a stretch of large hills.`,
+    routeDescription: (
+      <>
+        Stating and ending in Fallbrook, this sneakily challenging route goes
+        through the southern Bohemian Alps. It&apos;s just a touch too far for
+        one of our 40 mile loops. Ride up through Loma, NE (
+        <Link
+          href="https://en.wikipedia.org/wiki/Loma,_Nebraska#In_the_media"
+          target="_blank"
+          className="hover:text-venetian-red-600"
+        >
+          which was featured in{" "}
+          <span className="italic">
+            To Wong Foo, Thanks for Everything! Julie Newmar
+          </span>
+        </Link>
+        ). County Road D to Valpraiso is home to a stretch of large hills.
+      </>
+    ),
     routeIframeSrc:
       "https://ridewithgps.com/embeds?type=route&id=28345766&sampleGraph=true",
   },
@@ -18,12 +35,7 @@ export default function Routes() {
         <h1 className={`${headerText.className} text-4xl mb-3`}>
           2024 Dozinky Doozy
         </h1>
-        <Route
-          routeTitle="The Doozy"
-          routeDescription="A 120-mile route that will test your mettle."
-          routeIframeSrc="https://ridewithgps.com/embeds?type=route&id=46191801&sampleGraph=true"
-          iframeClassName={routeIframeClassName}
-        />
+        <p>The route will be released closer to the event.</p>
       </section>
       <section>
         <h1 className={`${headerText.className} text-4xl mb-3`}>

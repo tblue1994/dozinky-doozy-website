@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import { DetailedHTMLProps, IframeHTMLAttributes } from "react";
+import { DetailedHTMLProps, IframeHTMLAttributes, ReactNode } from "react";
 
 type RouteProps = {
   routeTitle: string;
   routeIframeSrc: string;
-  routeDescription: string;
+  routeDescription: ReactNode;
   iframeClassName?: string;
 } & Omit<
   DetailedHTMLProps<IframeHTMLAttributes<HTMLIFrameElement>, HTMLIFrameElement>,

@@ -25,7 +25,7 @@ export default function Home() {
             Alps of Prague, Nebraska.
           </p>
           <div className="my-4">
-            <RegisterLink className="text-xl" />
+            <RegisterLink className="text-xl">2024 Registration</RegisterLink>
           </div>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
