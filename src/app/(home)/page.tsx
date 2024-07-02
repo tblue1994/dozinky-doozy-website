@@ -17,13 +17,26 @@ export default function Home() {
               target="_blank"
               className="hover:text-venetian-red-700"
             >
-              Czechland Lake Recreation Area
+              Czechland Lake Recreation Area, Prague, NE
             </Link>
           </h2>
           <p>
-            Come join us in riding 120 miles of beautiful gravel in the Bohemian
-            Alps of Prague, Nebraska.
+            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Challenge through the stunning Bohemian Alps, located north of Lincoln, NE. The route consists of three unique 40-mile loops, each starting and ending at Czechland Lake. 
+            Your journey will take you down dirt roads, over steep hills, into the Platte River valley. You will have 10 hours to complete the Doozy.
           </p>
+          <p>
+            This event is designed to challenge and inspire you. Finishing the Dozinky Doozy will be an accomplishment you can be proud of. Remember, harvest is a time to reap what you sow. 
+            What seeds will you sow this year? Embrace the challenge and join us for an unforgettable adventure!Remember, harvest is a time to reap what you sow. What seeds will you sow this year? Embrace the challenge and join us for an unforgettable adventure!
+          </p>
+          <p>
+            $50 registration fee includes:
+          </p>
+          <ul>
+            <li>Post ride meal and beverages</li>
+            <li>Awesome Finsher Patches for all Doozy Finishers</li>
+            <li>Custom award for "unofficial" 1st place</li>
+            <li>Fully stocked checkpoint at Czechland Lake and a limited SAG stop on each loop</li>
+          </ul> 
           <div className="my-4">
             <RegisterLink className="text-xl">2024 Registration</RegisterLink>
           </div>

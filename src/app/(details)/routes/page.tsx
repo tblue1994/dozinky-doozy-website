@@ -8,7 +8,7 @@ const trainingRoutes = [
     routeDescription: (
       <>
         Starting and ending in Fallbrook, this sneakily challenging route goes
-        through the southern Bohemian Alps. It&apos;s just a touch too far for
+        through a part of the southern Bohemian Alps that are just a touch too far for
         one of our 40 mile loops. Ride up through Loma, NE (
         <Link
           href="https://en.wikipedia.org/wiki/Loma,_Nebraska#In_the_media"
