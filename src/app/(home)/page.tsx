@@ -10,7 +10,7 @@ export default function Home() {
       <LogoTagline />
       <div className="p-8">
         <div className="text-center mb-12">
-          <h3 className="text-xl mt-2">Saturday, September 28, 2024</h3>
+          <h3 className="text-xl mt-2">Saturday, September 28, 2024, 8 AM</h3>
           <p className="text-lg mb-2">
             <Link
               href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
@@ -44,7 +44,7 @@ export default function Home() {
               word="Doozy"
               pronunciation="DOO-zee"
               partOfSpeech="noun"
-              definition="Something that is extraordinary or outstanding of its kind. I ain't gonna sugar coat it, folks. This one's gonna to be a challenge!"
+              definition="Something that is extraordinary or outstanding of its kind. I won't gonna sugar coat it, this one's going to be a challenge! However, you can't truly achieve something without a chance of failure. I believe you have what it takes. Do you?"
             />
           </div>
           <Image
