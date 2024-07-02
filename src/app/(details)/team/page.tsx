@@ -30,8 +30,8 @@ export default function Team() {
         <p>
           Started the Doozy in 2024. I love all things gravel and the Bohemian
           Alps are no exception. I rode one of my first gravel events in the
-          Alps and was smitten with the area. These roads are just so
-          iconic&mdash;I knew we had to keep an event out here.
+          Alps and was smitten with the area. These roads and their champagne gravel are just so
+          iconic &mdash; I knew we had to keep an event out here.
         </p>
         <p>I hope you find the Alps as enchanting as I do!</p>
       </div>
