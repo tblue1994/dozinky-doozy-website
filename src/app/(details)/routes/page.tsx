@@ -21,6 +21,20 @@ const trainingRoutes = [
           </span>
         </Link>
         ). County Road D to Valparaiso is home to a stretch of large hills.
+        <br/><br/>
+        Check out <Link
+          href="https://www.gravel-worlds.com/"
+          target="_blank"
+          className="underline hover:text-venetian-red-600"
+        >
+          Gravel Worlds
+        </Link> and their <Link
+          href="https://www.gravel-worlds.com/history"
+          target="_blank"
+          className="underline hover:text-venetian-red-600"
+        >
+          history page
+        </Link> for more past routes!
       </>
     ),
     routeIframeSrc:
