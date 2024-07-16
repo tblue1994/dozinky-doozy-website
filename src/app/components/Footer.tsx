@@ -33,6 +33,17 @@ export const Footer = () => {
             height={60}
           />
         </Link>
+        <Link
+          href="/contact"
+        >
+          <Image
+            className="w-auto h-7"
+            src="/email.png"
+            alt="Contact Us"
+            width={60}
+            height={60}
+          />
+        </Link>
       </div>
     </footer>
   );
