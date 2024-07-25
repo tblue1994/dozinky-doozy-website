@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
-        <div className="text-justify mb-16">
+        <div className="text-justify mb-10">
           <h1 className="text-3xl mt-2 text-center">
             Saturday, September 28, 2024, 8 AM
           </h1>
@@ -50,6 +50,48 @@ export default function Home() {
           </ul>
           <div className="mt-8 mb-4 w-fit mx-auto">
             <RegisterLink className="text-xl">2024 Registration</RegisterLink>
+          </div>
+        </div>
+        <div className="my-10">
+          <h2 className="text-3xl text-center">Sponsors</h2>
+          <p className="text-center">Thank you to all of our sponsors!</p>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
+            <Link href="" target="_blank">
+              <Image
+                src="/harvest_festival.webp"
+                alt="NNTC"
+                width={2059}
+                height={1433}
+              />
+              NNTC
+            </Link>
+            <Link href="" target="_blank">
+              <Image
+                src="/harvest_festival.webp"
+                alt="Link Cycling"
+                width={2059}
+                height={1433}
+              />
+              Link Cycling
+            </Link>
+            <Link href="" target="_blank">
+              <Image
+                src="/harvest_festival.webp"
+                alt="Mana Games"
+                width={2059}
+                height={1433}
+              />
+              Mana Games
+            </Link>
+            <Link href="" target="_blank">
+              <Image
+                src="/harvest_festival.webp"
+                alt="Alvin Coffee"
+                width={2059}
+                height={1433}
+              />
+              Alvin Coffee
+            </Link>
           </div>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
