@@ -21,8 +21,9 @@ export const NavBar = ({
 }: {
   textColor?: "white" | "black";
 }) => {
-  const baseLinkClassNames = `mx-2 text-${textColor}`
+  const baseLinkClassNames = `mx-1 md:mx-2 text-${textColor}`
   const linkClassNames = `${baseLinkClassNames} hover:underline`;
+  const popoverParentClassNames = `${baseLinkClassNames} group relative flex-shrink-0`;
   const popoverClassNames = clsx(
     'hidden group-hover:block absolute right-0 bg-opacity-85 rounded p-1 text-right',{
     'bg-sapphire-300': textColor === 'white',
@@ -31,7 +32,7 @@ export const NavBar = ({
 
   return (
     <nav className="flex shrink-0 items-center pt-1 px-4 w-full z-10">
-      <Link href="\" className="mr-auto hover:opacity-85">
+      <Link href="\" className="mr-auto hover:opacity-85 flex-shrink-1 md:flex-shrink-0">
         <Image
           priority
           src={`/wordmark_${textColor}.svg`}
@@ -41,7 +42,7 @@ export const NavBar = ({
           className="my-[-16%]"
         />
       </Link>
-      <span className={`${baseLinkClassNames} group relative`}>
+      <span className={popoverParentClassNames}>
         About &#9662;
         <ul className={popoverClassNames}>
           {aboutChildren.map(({ href, text}) => (
@@ -53,7 +54,7 @@ export const NavBar = ({
           ))}
         </ul>
       </span>
-      <span className={`${baseLinkClassNames} group relative`}>
+      <span className={popoverParentClassNames}>
         TEAM &#9662;
         <ul className={popoverClassNames}>
           {teamChildren.map(({ href, text}) => (
