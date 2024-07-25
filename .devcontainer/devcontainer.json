@@ -10,6 +10,17 @@
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
 	},
 
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-typescript-tslint-plugin",
+				"bradlc.vscode-tailwindcss"
+		]
+		}
+	},
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
