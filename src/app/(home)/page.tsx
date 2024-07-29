@@ -96,6 +96,10 @@ export default function Home() {
               <SponsorLogoLink key={sponsor.name} {...sponsor} />
             ))}
           </div>
+          <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
+            <li>Save $50 on 3D or Virtual bike fit with Link Cycling when you mention the Doozy</li>
+            <li>Gravel Gals! Save $25 on your $50 registration when you use the code <b>MANAGAMES</b> at checkout</li>
+          </ul>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
           <div className="col-span-1">
