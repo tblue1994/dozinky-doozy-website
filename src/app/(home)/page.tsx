@@ -56,7 +56,7 @@ export default function Home() {
           <h2 className="text-3xl text-center">Sponsors</h2>
           <p className="text-center">Thank you to all of our sponsors!</p>
           <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
-            <Link href="https://nntc.net/" target="_blank">
+            {/* <Link href="https://nntc.net/" target="_blank">
               <Image
                 src="/harvest_festival.webp"
                 alt="NNTC"
@@ -64,10 +64,10 @@ export default function Home() {
                 height={1433}
               />
               NNTC
-            </Link>
+            </Link> */}
             <Link href="https://thelinkinnovations.com/" target="_blank">
               <Image
-                src="/harvest_festival.webp"
+                src="/link-cycling.png"
                 alt="Link Cycling"
                 width={2059}
                 height={1433}
@@ -76,7 +76,7 @@ export default function Home() {
             </Link>
             <Link href="https://mana-games.com/" target="_blank">
               <Image
-                src="/harvest_festival.webp"
+                src="/mana-games.png"
                 alt="Mana Games"
                 width={2059}
                 height={1433}
@@ -85,7 +85,7 @@ export default function Home() {
             </Link>
             <Link href="https://www.instagram.com/alvin.coffee/" target="_blank">
               <Image
-                src="/harvest_festival.webp"
+                src="/alvin-coffee.png"
                 alt="Alvin Coffee"
                 width={2059}
                 height={1433}
