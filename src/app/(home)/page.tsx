@@ -4,12 +4,14 @@ import { LogoTaglineHeader } from "../components/LogoTagline";
 import { Definition } from "../components/Definition";
 import Link from "next/link";
 
+const sponsorClassNames = "block basis-1/2 sm:basis-1/4";
+
 export default function Home() {
   return (
     <>
       <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
-        <div className="text-justify mb-10">
+        <div className="text-justify">
           <h1 className="text-3xl mt-2 text-center">
             Saturday, September 28, 2024, 8 AM
           </h1>
@@ -54,43 +56,43 @@ export default function Home() {
         </div>
         <div className="my-10">
           <h2 className="text-3xl text-center">Sponsors</h2>
-          <p className="text-center">Thank you to all of our sponsors!</p>
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
-            {/* <Link href="https://nntc.net/" target="_blank">
-              <Image
-                src="/harvest_festival.webp"
-                alt="NNTC"
-                width={2059}
-                height={1433}
-              />
-              NNTC
-            </Link> */}
-            <Link href="https://thelinkinnovations.com/" target="_blank">
+          <p className="text-center mb-2">Thank you to all of our sponsors!</p>
+          <div className="flex flex-grow flex-wrap justify-center items-center">
+            <Link
+              href="https://thelinkinnovations.com/"
+              target="_blank"
+              className={sponsorClassNames}
+            >
               <Image
                 src="/link-cycling.png"
                 alt="Link Cycling"
-                width={2059}
-                height={1433}
+                width={400}
+                height={400}
               />
-              Link Cycling
             </Link>
-            <Link href="https://mana-games.com/" target="_blank">
+            <Link
+              href="https://mana-games.com/"
+              target="_blank"
+              className={sponsorClassNames}
+            >
               <Image
                 src="/mana-games.png"
                 alt="Mana Games"
-                width={2059}
-                height={1433}
+                width={589}
+                height={423}
               />
-              Mana Games
             </Link>
-            <Link href="https://www.instagram.com/alvin.coffee/" target="_blank">
+            <Link
+              href="https://www.instagram.com/alvin.coffee/"
+              target="_blank"
+              className={sponsorClassNames}
+            >
               <Image
                 src="/alvin-coffee.png"
                 alt="Alvin Coffee"
-                width={2059}
-                height={1433}
+                width={321}
+                height={202}
               />
-              Alvin Coffee
             </Link>
           </div>
         </div>
