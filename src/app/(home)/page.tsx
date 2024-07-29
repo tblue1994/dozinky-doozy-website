@@ -39,6 +39,7 @@ export default function Home() {
           </p>
           <h3 className="my-3 text-lg">$50 registration fee includes:</h3>
           <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
+            <li>Start line Kolaches and Cold Brew (provided by Alvin Coffee)</li>
             <li>Post ride meal and beverages</li>
             <li>Awesome Finisher Patches for all Doozy Finishers</li>
             <li>Custom award for &quot;unofficial&quot; 1st place</li>
