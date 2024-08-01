@@ -14,14 +14,14 @@ export type NavItem = LinkNavItem | NavItemWithChildren;
 
 const NavItems: NavItem[] = [
   {
-    text: "About",
+    text: "Event",
     children: [
       { href: "/routes", text: "Routes" },
       // { href: "/faq", text: "FAQ" },
     ],
   },
   {
-    text: "TEAM",
+    text: "About Us",
     children: [
       { href: "/team", text: "Team" },
       { href: "/contact", text: "Contact" },
