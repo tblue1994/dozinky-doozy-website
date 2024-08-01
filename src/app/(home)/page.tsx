@@ -3,13 +3,41 @@ import { RegisterLink } from "@/app/components/RegisterLink";
 import { LogoTaglineHeader } from "../components/LogoTagline";
 import { Definition } from "../components/Definition";
 import Link from "next/link";
+import { SponsorLogoLink, SponsorLogoLinkProps } from "./SponsorLogoLink";
+
+const sponsors: SponsorLogoLinkProps[] = [
+  {
+    name: "Link Cycling",
+    url: "https://thelinkinnovations.com/",
+    image: "/link-cycling.png",
+    altText: "Link Cycling logo word mark",
+    width: 400,
+    height: 400,
+  },
+  {
+    name: "Mana Games",
+    url: "https://mana-games.com/",
+    image: "/mana-games.png",
+    altText: "Mana Games logo and word mark",
+    width: 589,
+    height: 423,
+  },
+  {
+    name: "Alvin Coffee",
+    url: "https://www.instagram.com/alvin.coffee/",
+    image: "/alvin-coffee.png",
+    altText: "Alvin Coffee logo word mark",
+    width: 321,
+    height: 202,
+  },
+];
 
 export default function Home() {
   return (
     <>
       <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
-        <div className="text-justify mb-10">
+        <div className="text-justify">
           <h1 className="text-3xl mt-2 text-center">
             Saturday, September 28, 2024, 8 AM
           </h1>
@@ -54,44 +82,11 @@ export default function Home() {
         </div>
         <div className="my-10">
           <h2 className="text-3xl text-center">Sponsors</h2>
-          <p className="text-center">Thank you to all of our sponsors!</p>
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-4">
-            <Link href="https://nntc.net/" target="_blank">
-              <Image
-                src="/harvest_festival.webp"
-                alt="NNTC"
-                width={2059}
-                height={1433}
-              />
-              NNTC
-            </Link>
-            <Link href="https://thelinkinnovations.com/" target="_blank">
-              <Image
-                src="/harvest_festival.webp"
-                alt="Link Cycling"
-                width={2059}
-                height={1433}
-              />
-              Link Cycling
-            </Link>
-            <Link href="https://mana-games.com/" target="_blank">
-              <Image
-                src="/harvest_festival.webp"
-                alt="Mana Games"
-                width={2059}
-                height={1433}
-              />
-              Mana Games
-            </Link>
-            <Link href="https://www.instagram.com/alvin.coffee/" target="_blank">
-              <Image
-                src="/harvest_festival.webp"
-                alt="Alvin Coffee"
-                width={2059}
-                height={1433}
-              />
-              Alvin Coffee
-            </Link>
+          <p className="text-center mb-2">Thank you to all of our sponsors!</p>
+          <div className="flex flex-grow flex-wrap justify-center items-center">
+            {sponsors.map((sponsor) => (
+              <SponsorLogoLink key={sponsor.name} {...sponsor} />
+            ))}
           </div>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">

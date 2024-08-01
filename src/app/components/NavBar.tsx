@@ -1,5 +1,6 @@
 import { TopMenu } from "./TopMenu";
 import { SlideOutMenu } from "./SlideOutMenu";
+import clsx from "clsx";
 
 export type LinkNavItem = {
   href: string;
@@ -16,7 +17,7 @@ const NavItems: NavItem[] = [
     text: "About",
     children: [
       { href: "/routes", text: "Routes" },
-      { href: "/sponsors", text: "Sponsors" },
+      // { href: "/faq", text: "FAQ" },
     ],
   },
   {
@@ -34,15 +35,22 @@ export const NavBar = ({
 }: {
   textColor?: "white" | "black";
 }) => {
+  const isServer = typeof window === "undefined";
+  const slideoutClassNames = clsx("sm:hidden", {
+    "xs:hidden": isServer,
+  });
+  const topMenuClassNames = clsx("hidden sm:flex", {
+    "xs:flex": isServer,
+  });
   return (
-    <nav className="sm:w-full">
+    <nav className="sm:w-full absolute top-0 left-0">
       <SlideOutMenu
         items={NavItems}
         textColor={textColor}
-        className="sm:hidden"
+        className={slideoutClassNames}
       />
       <TopMenu
-        className="hidden sm:flex"
+        className={topMenuClassNames}
         items={NavItems}
         textColor={textColor}
       />
