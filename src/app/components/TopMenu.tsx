@@ -15,6 +15,7 @@ export const TopMenu = ({
 }) => {
   const baseLinkClassNames = `mx-1 md:mx-2 text-${textColor}`;
   const linkClassNames = `${baseLinkClassNames} hover:underline`;
+  const childLinkClassNames = `${linkClassNames} inline-block w-max`;
   const popoverParentClassNames = `${baseLinkClassNames} group relative flex-shrink-0`;
   const popoverClassNames = clsx(
     "hidden group-hover:block absolute right-0 bg-opacity-85 rounded p-1 text-right",
@@ -52,11 +53,11 @@ export const TopMenu = ({
           const parent = item as NavItemWithChildren;
           return (
             <span className={popoverParentClassNames} key={parent.text}>
-              About &#9662;
+              {parent.text} &#9662;
               <ul className={popoverClassNames}>
                 {parent.children.map(({ href, text }) => (
                   <li key={`${parent.text}-${href}`}>
-                    <Link href={href} className={linkClassNames}>
+                    <Link href={href} className={childLinkClassNames}>
                       {text}
                     </Link>
                   </li>
