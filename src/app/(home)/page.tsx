@@ -30,6 +30,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 321,
     height: 202,
   },
+  {
+    name: "Bank of Prague",
+    url: "https://www.bankofprague1.com/",
+    image: "/bofp.png",
+    altText: "Bank of Prague logo",
+    width: 424,
+    height: 392,
+  },
 ];
 
 export default function Home() {
