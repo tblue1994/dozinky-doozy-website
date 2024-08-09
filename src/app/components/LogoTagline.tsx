@@ -9,7 +9,7 @@ export const LogoTaglineHeader = () => {
         alt="Dozinky Doozy words on a red banner surrounded by a wreath of wheat stalks, blue flowers, and bicycle wheel."
         width={4501}
         height={4501}
-        className="w-1/2 h-auto mx-auto my-[-10%]"
+        className="w-1/2 h-auto mx-auto my-[-10%] mt-[-20%] sm:mt-[-10%]"
       />
       <Image
         priority
