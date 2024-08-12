@@ -6,12 +6,13 @@ const rules: { title: string; description: ReactNode }[] = [
     title: "Be Cool",
     description: (
       <>
-        Pirate Cycling League and Gravel Worlds Rule #1. Stay on course, don't
-        take shortcuts, no storing drop bags away from Czechland Lake, and, most
-        importantly, <strong>treat everyone with respect</strong>, including
-        fellow riders, race directors, volunteers, and all others you encounter
-        during the event, such as farmers, law enforcement, emergency
-        responders, and local residents.
+        Pirate Cycling League and Gravel Worlds Rule #1. Stay on course,
+        don&apos;t take shortcuts, no storing drop bags away from Czechland
+        Lake, and, most importantly,{" "}
+        <strong>treat everyone with respect</strong>, including fellow riders,
+        race directors, volunteers, and all others you encounter during the
+        event, such as farmers, law enforcement, emergency responders, and local
+        residents.
       </>
     ),
   },
@@ -60,17 +61,18 @@ const rules: { title: string; description: ReactNode }[] = [
     description: (
       <p>
         You will have 10 hours to complete the Doozy. This time requires a 12
-        mph pace, but for good reason. We'd like to have everyone back before
-        dark in order to limit cyclists on the road at night during harvest.
+        mph pace, but for good reason. We&apos;d like to have everyone back
+        before dark in order to limit cyclists on the road at night during
+        harvest.
         <br />
         <br />
         This also means that you will need to start the third loop by 2:45pm. If
-        you'd like to continue to ride the final loop past this time, you are
-        free to do so but will no longer be participating in the Doozy.
+        you&apos;d like to continue to ride the final loop past this time, you
+        are free to do so but will no longer be participating in the Doozy.
         <br />
         <br />
-        Remember, these hills are no joke (that's why it's called a gravel
-        challenge!), so completing 40 or 80 miles can still be a big
+        Remember, these hills are no joke (that&apos;s why it&apos;s called a
+        gravel challenge!), so completing 40 or 80 miles can still be a big
         accomplishment for you on your gravel journey.
       </p>
     ),
@@ -104,10 +106,10 @@ export default function RiderRules() {
       <h1 className={`${headerText.className} text-4xl`}>Rider Rules</h1>
       <section>
         <ol>
-          {rules.map(({ title, description }) => (
+          {rules.map(({ title, description: children }) => (
             <li key={title} className="my-4 list-decimal text-xl">
               <h2>{title}</h2>
-              <p className="text-base" children={description} />
+              <p className="text-base">{children}</p>
             </li>
           ))}
         </ol>

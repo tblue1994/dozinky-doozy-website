@@ -93,9 +93,10 @@ const faqs: Faq[] = [
     answer: (
       <>
         Treat cyclists like you would a four-wheeler or ATV. Give them at least
-        3 feet of space when passing, and only pass when it's safe. If the road
-        is narrow or you're approaching a hill, please wait. It might take a few
-        extra minutes, but this will help us all get where we are going safely.
+        3 feet of space when passing, and only pass when it&apos;s safe. If the
+        road is narrow or you&apos;re approaching a hill, please wait. It might
+        take a few extra minutes, but this will help us all get where we are
+        going safely.
         <br />
         <br />
         Here are some additional resources
@@ -186,11 +187,11 @@ export default function CommunityFaq() {
         <ul>
           {faqs.map((faq) => {
             if ((faq as BasicFaq).answer) {
-              const { question, answer } = faq as BasicFaq;
+              const { question, answer: children } = faq as BasicFaq;
               return (
                 <li key={question} className="my-4 text-xl">
                   <h2>{question}</h2>
-                  <p className="text-base" children={answer} />
+                  <p className="text-base">{children}</p>
                 </li>
               );
             } else if ((faq as SubFaq).children) {

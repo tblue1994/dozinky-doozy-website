@@ -9,11 +9,12 @@ const rules: { title: string; description: ReactNode }[] = [
       <>
         Absolutely! The full Doozy is 120 miles, but you can always ride less.
         The route consists of three unique 40-mile loops, so after 40 and 80
-        miles, you'll be right back at the start/finish line. This is a perfect
-        time to evaluate if you'd like to continue with the Doozy. Regardless of
-        how far you ride, we'll have kolaches and cold brew to start your ride
-        and a meal waiting for you at the finish. Whatever your personal finish
-        line, we'll be happy as long as you challenge yourself!
+        miles, you&apos;ll be right back at the start/finish line. This is a
+        perfect time to evaluate if you&apos;d like to continue with the Doozy.
+        Regardless of how far you ride, we&apos;ll have kolaches and cold brew
+        to start your ride and a meal waiting for you at the finish. Whatever
+        your personal finish line, we&apos;ll be happy as long as you challenge
+        yourself!
       </>
     ),
   },
@@ -32,7 +33,7 @@ const rules: { title: string; description: ReactNode }[] = [
     title: "What safety steps are you taking with the Doozy this year?",
     description: (
       <>
-        I'm glad you asked! Here is my approach:
+        I&apos;m glad you asked! Here is my approach:
         <br />
         <br />
         <ol className="list-decimal list-inside">
@@ -40,13 +41,13 @@ const rules: { title: string; description: ReactNode }[] = [
             <strong>
               Coordination with County and City Officials and Law Enforcement:
             </strong>{" "}
-            I've met with the Butler and Saunders County Boards of Supervisors,
-            the Butler and Saunders County sheriff departments, and local
-            emergency medical services. They are all aware of the race and have
-            given us the go-ahead.
+            I&apos;ve met with the Butler and Saunders County Boards of
+            Supervisors, the Butler and Saunders County sheriff departments, and
+            local emergency medical services. They are all aware of the race and
+            have given us the go-ahead.
           </li>
           <li>
-            <strong>Local Awareness:</strong> I've worked with Butler and
+            <strong>Local Awareness:</strong> I am working with Butler and
             Saunders County residents to ensure they are aware of the event.
             This is their home, and they appreciate knowing about the event in
             advance to avoid surprises with a hundred or more cyclists on their
@@ -61,11 +62,11 @@ const rules: { title: string; description: ReactNode }[] = [
             overall number of trucks on the road.
           </li>
           <li>
-            <strong>Route Building:</strong> I'm working with local farmers and
-            Alps residents to craft a route that is challenging but avoids major
-            roads. Farmers often use main gravel roads to get to pavement before
-            taking their grain to town. Avoiding these major roads should reduce
-            the likelihood of interactions with heavily-laden semis.
+            <strong>Route Building:</strong> I&apos;m working with local farmers
+            and Alps residents to craft a route that is challenging but avoids
+            major roads. Farmers often use main gravel roads to get to pavement
+            before taking their grain to town. Avoiding these major roads should
+            reduce the likelihood of interactions with heavily-laden semis.
           </li>
         </ol>
         <br />
@@ -93,10 +94,10 @@ export default function RiderFAQ() {
       <h1 className={`${headerText.className} text-4xl`}>Rider FAQ</h1>
       <section>
         <ol>
-          {rules.map(({ title, description }) => (
+          {rules.map(({ title, description: children }) => (
             <li key={title} className="my-4 list-decimal text-xl">
               <h2>{title}</h2>
-              <p className="text-base" children={description} />
+              <p className="text-base">{children}</p>
             </li>
           ))}
         </ol>
