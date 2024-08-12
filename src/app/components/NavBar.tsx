@@ -17,7 +17,7 @@ const NavItems: NavItem[] = [
     text: "Event",
     children: [
       { href: "/routes", text: "Routes" },
-      // { href: "/rider-faq", text: "Rider FAQ" },
+      { href: "/rider-faq", text: "Rider FAQ" },
       { href: "/rider-rules", text: "Rider Rules" },
       { href: "/community-faq", text: "Community FAQ" },
     ],
