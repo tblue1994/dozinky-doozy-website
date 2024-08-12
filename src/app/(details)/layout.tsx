@@ -9,7 +9,7 @@ export default function Layout({
   return (
     <div className="flex flex-col wrap h-screen w-screen justify-between items-center">
       <NavBar />
-      <main className="mt-12 sm:mt-0 p-8 mx-auto max-w-screen-lg grow">
+      <main className="mt-12 sm:mt-0 p-8 mx-auto max-w-screen-lg">
         {children}
       </main>
       <Footer />
