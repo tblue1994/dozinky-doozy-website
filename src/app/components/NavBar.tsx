@@ -17,7 +17,7 @@ const NavItems: NavItem[] = [
     text: "Event",
     children: [
       { href: "/routes", text: "Routes" },
-      { href: "/rider-faq", text: "Rider FAQ" },
+      // { href: "/rider-faq", text: "Rider FAQ" },
       { href: "/rider-rules", text: "Rider Rules" },
       { href: "/community-faq", text: "Community FAQ" },
     ],
@@ -45,7 +45,7 @@ export const NavBar = ({
     "xs:flex": isServer,
   });
   return (
-    <nav className="sm:w-full absolute top-0 left-0">
+    <nav className="sm:w-full absolute top-0 left-0 sm:static">
       <SlideOutMenu
         items={NavItems}
         textColor={textColor}

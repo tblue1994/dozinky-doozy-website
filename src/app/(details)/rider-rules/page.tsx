@@ -1,77 +1,66 @@
-import { LodgingItem } from "@/app/components/LodgingItem";
 import { headerText } from "@/app/ui/fonts";
-import Link from "next/link";
 
-const hotels20 = [
+const rules: { title: string; description: string }[] = [
   {
-    name: "Wahoo Heritage Inn",
-    address: "950 N Chestnut St, Wahoo, NE 68066",
-    phone: "(402) 443-1288",
-    url: "https://www.wahooheritageinn.com/",
+    title: "Be cool",
+    description:
+      "ride the course, don't take any shortcuts, no hitching a ride unless you're heading back to Czechland Lake. No storing drop bags.",
+  },
+  {
+    title: "Be kind",
+    description:
+      "treat everyone with respect I clouding race directors, volunteers, your fellow competitors, and anyone you might meet during the event. This includes but is not limited to: farmers, law enforcement and emergency response, local residents.",
+  },
+  {
+    title: "Respect the alps (no littering)",
+    description:
+      "absolutely no littering, do your part to keep the alps beautiful. Remember you're a guest in the alps and you're representing our cycling community. The residents of the alps want to share the beauty of their area.",
+  },
+  {
+    title: "Follow the rules of the road",
+    description:
+      "while participating in the Doozy, you will be expected to follow the rules of the road including stopping at all stop signs and highway crossings, keeping to the right especially over blind hills (most hills in the alps are too steep to see over), letting emergency vehicles pass, and being cautious around harvest equipment. The finisher patch will be dope but it's not worth getting hurt or dying over.",
+  },
+  {
+    title: "No support vehicles on course",
+    description:
+      "In an effort to limit traffic on course, the only place to receive aid is at Czechland Lake. We will have limited water stops at miles 20, 60, and 100. In addition to a stocked aid station, feel free to keep whatever you need to continue your journey in your car or at the Lake, you will be swinging through this stop twice (miles 40 and 80).",
+  },
+  {
+    title: "Gear (no ebikes)",
+    description:
+      "ebikes riders are welcome to join us for the ride but will not be eligible for the finisher patch. Helmets and rear tail lights are non-negotiable requirements. You must have a way to navigate the course (GPS or cue sheets) as it will not be marked. Basic flat repair kits are recommended.",
+  },
+  {
+    title:
+      "Hustle (time limit, may be stopped before 3rd loop, no longer competing in that case)",
+    description:
+      "you will have 10 hours to complete the Doozy. This time requires a 12 mph pace, but for good reason. We'd like to have everyone back by six in order to limit cyclists on the road after dark during harvest. This also means that you will need to start the third loop by 2:45pm. If you'd like to contie to ride the final loop past this time, you are free to do so but will no longer be competing in the Doozy. These hills are no joke (that's why it's called a gravel challenge). Completing 40 or 80 miles is a big accomplishment.",
+  },
+  {
+    title: "Reap what you sow (follow the rules or be gone)",
+    description:
+      "you will reap the rewards of the seeds you sow. if you are found to be violating any of our rules, you will be disqualified from the doozy and not allowed to participate in future events.",
+  },
+  {
+    title: "Be prepared",
+    description: "sag details, call 911 if needed, have a backup plan",
   },
 ];
 
-const hotels40 = [
-  {
-    name: "Holiday Inn Express & Suites Lincoln I-80",
-    address: "2200 Wildcat Dr, Lincoln, NE 68521",
-    phone: "(402) 975-8330",
-    url: "https://www.ihg.com/holidayinnexpress/hotels/us/en/lincoln/lnkwc/hoteldetail",
-  },
-  {
-    name: "Best Western Plus Lincoln Inn & Suites",
-    address: "2201 Wildcat Cir, Lincoln, NE 68521",
-    phone: "(402) 438-0088",
-    url: "https://www.bestwestern.com/en_US/book/hotels-in-lincoln/best-western-plus-lincoln-inn-suites/propertyCode.28075.html",
-  },
-  {
-    name: "Hampton Inn & Suites Lincoln - Northeast I-80",
-    address: "7343 Husker Cir, Lincoln, NE 68504",
-    phone: "(402) 435-4600",
-    url: "https://www.hilton.com/en/hotels/lnknhhx-hampton-suites-lincoln-northeast-i-80/",
-  },
-];
-
-const h2ClassNames = "text-2xl";
-const h3ClassNames = "text-xl";
-
-export default function Lodging() {
+export default function RiderRules() {
   return (
     <div className="flex flex-col gap-6 w-fit mx-auto">
-      <h1 className={`${headerText.className} text-4xl`}>Hotels and Camping</h1>
+      <h1 className={`${headerText.className} text-4xl`}>Rider Rules</h1>
       <section>
-        <h2 className={h2ClassNames}>Camping</h2>
-        <p>
-          Tent and RV Camping is available at{" "}
-          <Link
-            href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
-            target="_blank"
-            className="underline hover:text-venetian-red-600"
-          >
-            Czechland Lake Recreation Area
-          </Link>
-          .
-        </p>
-      </section>
-      <section>
-        <h2 className={h2ClassNames}>Hotels</h2>
-        Here are some nearby hotels:
-        <h3 className={`${h3ClassNames} mt-4`}>~20 Minute Drive</h3>
-        <ul>
-          {hotels20.map((h) => (
-            <li key={h.name} className="my-4">
-              <LodgingItem {...h} />
+        <ol>
+          {rules.map(({ title, description }) => (
+            <li key={title} className="my-4 list-decimal text-xl">
+              <h2>{title}</h2>
+              <p className="text-base">{description}</p>
             </li>
           ))}
-        </ul>
-        <h3 className={`${h3ClassNames} mt-8`}>~40 Minute Drive</h3>
-        <ul>
-          {hotels40.map((h) => (
-            <li key={h.name} className="my-4">
-              <LodgingItem {...h} />
-            </li>
-          ))}
-        </ul>
+        </ol>
       </section>
     </div>
   );

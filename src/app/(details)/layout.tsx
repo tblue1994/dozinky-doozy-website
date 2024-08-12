@@ -7,9 +7,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col h-screen w-screen justify-between items-center">
+    <div className="flex flex-col wrap h-screen w-screen justify-between items-center">
       <NavBar />
-      <main className="mt-8 p-8 mx-auto max-w-screen-lg">{children}</main>
+      <main className="mt-12 sm:mt-0 p-8 mx-auto max-w-screen-lg grow">
+        {children}
+      </main>
       <Footer />
     </div>
   );
