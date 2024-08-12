@@ -99,7 +99,7 @@ const faqs: Faq[] = [
         going safely.
         <br />
         <br />
-        Here are some additional resources
+        Here are some additional resources:
         <br />
         <Link
           href="https://www.hanover.com/resources/tips-individuals-and-businesses/prepare-now-learn-how/6-tips-share-road-cyclists"

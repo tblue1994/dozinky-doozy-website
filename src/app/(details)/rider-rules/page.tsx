@@ -80,7 +80,7 @@ const rules: { title: string; description: ReactNode }[] = [
   {
     title: "Be Prepared",
     description:
-      "Have a plan in case you need to abandon the Doozy. We will not have SAG vehicles this year",
+      "Have a plan in case you need to abandon the Doozy. We will not have SAG vehicles this year.",
   },
   {
     title: "Reap what you sow",
