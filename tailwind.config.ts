@@ -67,6 +67,7 @@ const config: Config = {
         "950": "#471e05",
       },
       white: "#ffffff",
+      black: "#000000",
     },
     extend: {
       backgroundImage: {

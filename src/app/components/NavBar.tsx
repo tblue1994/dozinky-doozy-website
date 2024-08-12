@@ -1,35 +1,61 @@
-import Image from "next/image";
-import Link from "next/link";
-import { RegisterLink } from "./RegisterLink";
+import { TopMenu } from "./TopMenu";
+import { SlideOutMenu } from "./SlideOutMenu";
+import clsx from "clsx";
+
+export type LinkNavItem = {
+  href: string;
+  text: string;
+};
+export type NavItemWithChildren = {
+  text: string;
+  children: LinkNavItem[];
+};
+export type NavItem = LinkNavItem | NavItemWithChildren;
+
+const NavItems: NavItem[] = [
+  {
+    text: "Event",
+    children: [
+      { href: "/routes", text: "Routes" },
+      { href: "/rider-faq", text: "Rider FAQ" },
+      { href: "/rider-rules", text: "Rider Rules" },
+      { href: "/community-faq", text: "Community FAQ" },
+    ],
+  },
+  {
+    text: "About Us",
+    children: [
+      { href: "/team", text: "Team" },
+      { href: "/contact", text: "Contact" },
+    ],
+  },
+  { href: "/lodging", text: "Lodging" },
+];
 
 export const NavBar = ({
   textColor = "black",
 }: {
   textColor?: "white" | "black";
 }) => {
-  const linkClassNames = `mx-2 text-${textColor} hover:underline`;
+  const isServer = typeof window === "undefined";
+  const slideoutClassNames = clsx("sm:hidden", {
+    "xs:hidden": isServer,
+  });
+  const topMenuClassNames = clsx("hidden sm:flex", {
+    "xs:flex": isServer,
+  });
   return (
-    <nav className="flex shrink-0 items-center pt-1 px-4 w-full z-10">
-      <Link href="\" className="mr-auto hover:opacity-85">
-        <Image
-          priority
-          src={`/wordmark_${textColor}.svg`}
-          alt="Logo"
-          width={120}
-          height={120}
-          className="my-[-16%]"
-        />
-      </Link>
-      <Link href="/routes" className={linkClassNames}>
-        Routes
-      </Link>
-      <Link href="/team" className={linkClassNames}>
-        Team
-      </Link>
-      <Link href="/lodging" className={linkClassNames}>
-        Lodging
-      </Link>
-      <RegisterLink className="ml-2" />
+    <nav className="sm:w-full absolute top-0 left-0 sm:static">
+      <SlideOutMenu
+        items={NavItems}
+        textColor={textColor}
+        className={slideoutClassNames}
+      />
+      <TopMenu
+        className={topMenuClassNames}
+        items={NavItems}
+        textColor={textColor}
+      />
     </nav>
   );
 };

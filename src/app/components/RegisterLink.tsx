@@ -5,14 +5,16 @@ import { ReactNode } from "react";
 export function RegisterLink({
   children = "Register",
   className = "",
+  style = "button",
 }: {
   children?: ReactNode;
   className?: string;
+  style?: "button" | "link";
 }) {
-  const linkClassNames = clsx(
-    "py-2 px-4 rounded bg-venetian-red-500 text-white hover:bg-venetian-red-700",
-    className
-  );
+  const linkClassNames = clsx(className, {
+    "py-2 px-4 rounded bg-venetian-red-500 text-white hover:bg-venetian-red-700":
+      style === "button",
+  });
   return (
     <Link
       href="https://www.bikereg.com/dozinky-doozy-gravel-challenge"

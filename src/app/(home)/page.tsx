@@ -3,8 +3,42 @@ import { RegisterLink } from "@/app/components/RegisterLink";
 import { LogoTaglineHeader } from "../components/LogoTagline";
 import { Definition } from "../components/Definition";
 import Link from "next/link";
+import { SponsorLogoLink, SponsorLogoLinkProps } from "./SponsorLogoLink";
 
-const sponsorClassNames = "block basis-1/2 sm:basis-1/4";
+const sponsors: SponsorLogoLinkProps[] = [
+  {
+    name: "Link Cycling",
+    url: "https://thelinkinnovations.com/",
+    image: "/link-cycling.png",
+    altText: "Link Cycling logo word mark",
+    width: 400,
+    height: 400,
+  },
+  {
+    name: "Mana Games",
+    url: "https://mana-games.com/",
+    image: "/mana-games.png",
+    altText: "Mana Games logo and word mark",
+    width: 589,
+    height: 423,
+  },
+  {
+    name: "Alvin Coffee",
+    url: "https://www.instagram.com/alvin.coffee/",
+    image: "/alvin-coffee.png",
+    altText: "Alvin Coffee logo word mark",
+    width: 321,
+    height: 202,
+  },
+  {
+    name: "Bank of Prague",
+    url: "https://www.bankofprague1.com/",
+    image: "/bofp.png",
+    altText: "Bank of Prague logo",
+    width: 424,
+    height: 392,
+  },
+];
 
 export default function Home() {
   return (
@@ -58,42 +92,9 @@ export default function Home() {
           <h2 className="text-3xl text-center">Sponsors</h2>
           <p className="text-center mb-2">Thank you to all of our sponsors!</p>
           <div className="flex flex-grow flex-wrap justify-center items-center">
-            <Link
-              href="https://thelinkinnovations.com/"
-              target="_blank"
-              className={sponsorClassNames}
-            >
-              <Image
-                src="/link-cycling.png"
-                alt="Link Cycling"
-                width={400}
-                height={400}
-              />
-            </Link>
-            <Link
-              href="https://mana-games.com/"
-              target="_blank"
-              className={sponsorClassNames}
-            >
-              <Image
-                src="/mana-games.png"
-                alt="Mana Games"
-                width={589}
-                height={423}
-              />
-            </Link>
-            <Link
-              href="https://www.instagram.com/alvin.coffee/"
-              target="_blank"
-              className={sponsorClassNames}
-            >
-              <Image
-                src="/alvin-coffee.png"
-                alt="Alvin Coffee"
-                width={321}
-                height={202}
-              />
-            </Link>
+            {sponsors.map((sponsor) => (
+              <SponsorLogoLink key={sponsor.name} {...sponsor} />
+            ))}
           </div>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">

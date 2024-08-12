@@ -33,9 +33,7 @@ export const Footer = () => {
             height={60}
           />
         </Link>
-        <Link
-          href="/contact"
-        >
+        <Link href="/contact">
           <Image
             className="w-auto h-7"
             src="/email.png"
@@ -45,6 +43,7 @@ export const Footer = () => {
           />
         </Link>
       </div>
+      <p className="text-xs mt-2">&copy; 2024 Gravel Quest LLC</p>
     </footer>
   );
 };
