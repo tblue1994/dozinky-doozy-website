@@ -1,50 +1,100 @@
 import { headerText } from "@/app/ui/fonts";
+import { ReactNode } from "react";
 
-const rules: { title: string; description: string }[] = [
+const rules: { title: string; description: ReactNode }[] = [
   {
-    title: "Be cool",
-    description:
-      "ride the course, don't take any shortcuts, no hitching a ride unless you're heading back to Czechland Lake. No storing drop bags.",
+    title: "Be Cool",
+    description: (
+      <>
+        Pirate Cycling League and Gravel Worlds Rule #1. Stay on course, don't
+        take shortcuts, no storing drop bags away from Czechland Lake, and, most
+        importantly, <strong>treat everyone with respect</strong>, including
+        fellow riders, race directors, volunteers, and all others you encounter
+        during the event, such as farmers, law enforcement, emergency
+        responders, and local residents.
+      </>
+    ),
   },
   {
-    title: "Be kind",
+    title: "Respect the Bohemian Alps",
     description:
-      "treat everyone with respect I clouding race directors, volunteers, your fellow competitors, and anyone you might meet during the event. This includes but is not limited to: farmers, law enforcement and emergency response, local residents.",
-  },
-  {
-    title: "Respect the alps (no littering)",
-    description:
-      "absolutely no littering, do your part to keep the alps beautiful. Remember you're a guest in the alps and you're representing our cycling community. The residents of the alps want to share the beauty of their area.",
+      "There is to be absolutely no littering. Remember you are a guest and are representing our cycling community. The local residents want to share the beauty of their area. Do your part to keep the Alps beautiful.",
   },
   {
     title: "Follow the rules of the road",
-    description:
-      "while participating in the Doozy, you will be expected to follow the rules of the road including stopping at all stop signs and highway crossings, keeping to the right especially over blind hills (most hills in the alps are too steep to see over), letting emergency vehicles pass, and being cautious around harvest equipment. The finisher patch will be dope but it's not worth getting hurt or dying over.",
+    description: (
+      <>
+        All riders will be expected to follow the rules of the road including:
+        stopping at all stop signs and highway crossings, letting emergency
+        vehicles pass, being cautious around harvest equipment, and keeping to
+        the right especially over blind hills (most of our hills too steep to
+        see over). No event or finisher patch is worth getting hurt over.
+      </>
+    ),
   },
   {
     title: "No support vehicles on course",
-    description:
-      "In an effort to limit traffic on course, the only place to receive aid is at Czechland Lake. We will have limited water stops at miles 20, 60, and 100. In addition to a stocked aid station, feel free to keep whatever you need to continue your journey in your car or at the Lake, you will be swinging through this stop twice (miles 40 and 80).",
+    description: (
+      <>
+        In an effort to limit traffic on course, the only place to receive aid
+        is at Czechland Lake. We will have limited water stops at miles 20, 60,
+        and 100. You will be passing through our checkpoint/aid station at
+        Czechland Lake twice on your journey (miles 40 and 80), so feel free to
+        keep whatever you need in your car or at the checkpoint. The only time a
+        support vehicle is allowed on course is to pick up an abandoning rider.
+      </>
+    ),
   },
   {
-    title: "Gear (no ebikes)",
-    description:
-      "ebikes riders are welcome to join us for the ride but will not be eligible for the finisher patch. Helmets and rear tail lights are non-negotiable requirements. You must have a way to navigate the course (GPS or cue sheets) as it will not be marked. Basic flat repair kits are recommended.",
+    title: "Gear",
+    description: (
+      <>
+        Helmets and rear tail lights are non-negotiable requirements. You must
+        have a way to navigate the course (GPS head unit or cue sheets) as it
+        will not be marked.
+      </>
+    ),
   },
   {
-    title:
-      "Hustle (time limit, may be stopped before 3rd loop, no longer competing in that case)",
-    description:
-      "you will have 10 hours to complete the Doozy. This time requires a 12 mph pace, but for good reason. We'd like to have everyone back by six in order to limit cyclists on the road after dark during harvest. This also means that you will need to start the third loop by 2:45pm. If you'd like to contie to ride the final loop past this time, you are free to do so but will no longer be competing in the Doozy. These hills are no joke (that's why it's called a gravel challenge). Completing 40 or 80 miles is a big accomplishment.",
+    title: "Hustle",
+    description: (
+      <p>
+        You will have 10 hours to complete the Doozy. This time requires a 12
+        mph pace, but for good reason. We'd like to have everyone back before
+        dark in order to limit cyclists on the road at night during harvest.
+        <br />
+        <br />
+        This also means that you will need to start the third loop by 2:45pm. If
+        you'd like to continue to ride the final loop past this time, you are
+        free to do so but will no longer be participating in the Doozy.
+        <br />
+        <br />
+        Remember, these hills are no joke (that's why it's called a gravel
+        challenge!), so completing 40 or 80 miles can still be a big
+        accomplishment for you on your gravel journey.
+      </p>
+    ),
   },
   {
-    title: "Reap what you sow (follow the rules or be gone)",
+    title: "Be Prepared",
     description:
-      "you will reap the rewards of the seeds you sow. if you are found to be violating any of our rules, you will be disqualified from the doozy and not allowed to participate in future events.",
+      "Have a plan in case you need to abandon the Doozy. We will not have SAG vehicles this year",
   },
   {
-    title: "Be prepared",
-    description: "sag details, call 911 if needed, have a backup plan",
+    title: "Reap what you sow",
+    description: (
+      <>
+        If you are not cool in your race conduct, kind in your interactions with
+        others, respectful of our hosting area, or fail to follow the rules of
+        the road, you will be disqualified from the Doozy and not invited back
+        to future events.
+        <br />
+        <br />
+        However, if you can follow our rules and are prepared and hustle, you
+        will have an awesome time at our event and go home with a rad finisher
+        patch!
+      </>
+    ),
   },
 ];
 
@@ -57,7 +107,7 @@ export default function RiderRules() {
           {rules.map(({ title, description }) => (
             <li key={title} className="my-4 list-decimal text-xl">
               <h2>{title}</h2>
-              <p className="text-base">{description}</p>
+              <p className="text-base" children={description} />
             </li>
           ))}
         </ol>
