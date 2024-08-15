@@ -30,6 +30,18 @@ const rules: { title: string; description: ReactNode }[] = [
         vehicles pass, being cautious around harvest equipment, and keeping to
         the right especially over blind hills (most of our hills too steep to
         see over). No event or finisher patch is worth getting hurt over.
+        <br />
+        <br />
+        Jason from Gravel worlds has a great video detailing these rules!
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/H3GLInxDWaM?si=Us2fjwIssuluegXg"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </>
     ),
   },
