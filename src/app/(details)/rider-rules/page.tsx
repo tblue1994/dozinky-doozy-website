@@ -1,3 +1,4 @@
+import { VideoEmbed } from "@/app/components/VideoEmbed";
 import { headerText } from "@/app/ui/fonts";
 import { ReactNode } from "react";
 
@@ -33,15 +34,9 @@ const rules: { title: string; description: ReactNode }[] = [
         <br />
         <br />
         Jason from Gravel worlds has a great video detailing these rules!
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/H3GLInxDWaM?si=Us2fjwIssuluegXg"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+        <div className="max-w-lg mx-auto my-3">
+          <VideoEmbed url="https://www.youtube.com/embed/H3GLInxDWaM?si=Us2fjwIssuluegXg" />
+        </div>
       </>
     ),
   },
