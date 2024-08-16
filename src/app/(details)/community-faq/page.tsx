@@ -1,3 +1,4 @@
+import { VideoEmbed } from "@/app/components/VideoEmbed";
 import { headerText } from "@/app/ui/fonts";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -42,48 +43,50 @@ const faqs: Faq[] = [
           <caption className="caption-top mb-2">
             An approximation of when and where our cyclists will be.
           </caption>
-          <tr>
-            <th className="border px-2">Location</th>
-            <th className="border px-2">Fast (20 mph)</th>
-            <th className="border px-2">Average (15 mph)</th>
-            <th className="border px-2">Slow (10 mph)</th>
-          </tr>
-          <tr>
-            <td className="border px-2">Abie</td>
-            <td className="border px-2">9 AM</td>
-            <td className="border px-2">9:30 AM</td>
-            <td className="border px-2">10 AM</td>
-          </tr>
-          <tr>
-            <td className="border px-2">Czechland Lake Visit #1</td>
-            <td className="border px-2">10 AM</td>
-            <td className="border px-2">10:45 AM</td>
-            <td className="border px-2">12 PM</td>
-          </tr>
-          <tr>
-            <td className="border px-2">Weston</td>
-            <td className="border px-2">11 AM</td>
-            <td className="border px-2">12 PM</td>
-            <td className="border px-2">2 PM</td>
-          </tr>
-          <tr>
-            <td className="border px-2">Czechland Lake Visit #2</td>
-            <td className="border px-2">12 PM</td>
-            <td className="border px-2">1:30 PM</td>
-            <td className="border px-2">4 PM</td>
-          </tr>
-          <tr>
-            <td className="border px-2">Loma</td>
-            <td className="border px-2">1 PM</td>
-            <td className="border px-2">2:45 PM</td>
-            <td className="border px-2">X</td>
-          </tr>
-          <tr>
-            <td className="border px-2">Finish</td>
-            <td className="border px-2">2 PM</td>
-            <td className="border px-2">4 PM</td>
-            <td className="border px-2">X</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th className="border px-2">Location</th>
+              <th className="border px-2">Fast (20 mph)</th>
+              <th className="border px-2">Average (15 mph)</th>
+              <th className="border px-2">Slow (10 mph)</th>
+            </tr>
+            <tr>
+              <td className="border px-2">Abie</td>
+              <td className="border px-2">9 AM</td>
+              <td className="border px-2">9:30 AM</td>
+              <td className="border px-2">10 AM</td>
+            </tr>
+            <tr>
+              <td className="border px-2">Czechland Lake Visit #1</td>
+              <td className="border px-2">10 AM</td>
+              <td className="border px-2">10:45 AM</td>
+              <td className="border px-2">12 PM</td>
+            </tr>
+            <tr>
+              <td className="border px-2">Weston</td>
+              <td className="border px-2">11 AM</td>
+              <td className="border px-2">12 PM</td>
+              <td className="border px-2">2 PM</td>
+            </tr>
+            <tr>
+              <td className="border px-2">Czechland Lake Visit #2</td>
+              <td className="border px-2">12 PM</td>
+              <td className="border px-2">1:30 PM</td>
+              <td className="border px-2">4 PM</td>
+            </tr>
+            <tr>
+              <td className="border px-2">Loma</td>
+              <td className="border px-2">1 PM</td>
+              <td className="border px-2">2:45 PM</td>
+              <td className="border px-2">X</td>
+            </tr>
+            <tr>
+              <td className="border px-2">Finish</td>
+              <td className="border px-2">2 PM</td>
+              <td className="border px-2">4 PM</td>
+              <td className="border px-2">X</td>
+            </tr>
+          </tbody>
         </table>
       </>
     ),
@@ -99,6 +102,11 @@ const faqs: Faq[] = [
         going safely.
         <br />
         <br />
+        Jason from Gravel Worlds (a race based out of Lincoln) has a great video
+        detailing rules that our cyclists are expected to follow:
+        <div className="max-w-lg mx-auto my-3">
+          <VideoEmbed url="https://www.youtube.com/embed/H3GLInxDWaM?si=Us2fjwIssuluegXg" />
+        </div>
         Here are some additional resources:
         <br />
         <Link
@@ -191,7 +199,7 @@ export default function CommunityFaq() {
               return (
                 <li key={question} className="my-4 text-xl">
                   <h2>{question}</h2>
-                  <p className="text-base">{children}</p>
+                  <span className="text-base">{children}</span>
                 </li>
               );
             } else if ((faq as SubFaq).children) {

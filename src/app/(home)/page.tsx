@@ -59,12 +59,12 @@ export default function Home() {
             </Link>
           </h2>
           <p className="my-2">
-            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Challenge
-            through the stunning Bohemian Alps, located north of Lincoln, NE.
-            The route consists of three unique 40-mile loops, each starting and
-            ending at Czechland Lake. Your journey will take you down dirt
-            roads, over steep hills, and into the Platte River valley. You will
-            have 10 hours to complete the Doozy.
+            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Cycling
+            Challenge through the stunning Bohemian Alps, located north of
+            Lincoln, NE. The route consists of three unique 40-mile loops, each
+            starting and ending at Czechland Lake. Your journey will take you
+            down dirt roads, over steep hills, and into the Platte River valley.
+            You will have 10 hours to complete the Doozy.
           </p>
           <p className="my-2">
             This event is designed to challenge and inspire you. Finishing the
@@ -96,6 +96,16 @@ export default function Home() {
               <SponsorLogoLink key={sponsor.name} {...sponsor} />
             ))}
           </div>
+          <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
+            <li>
+              Save $50 on 3D or Virtual bike fit with Link Cycling when you
+              mention the Doozy
+            </li>
+            <li>
+              Gravel Gals! Save $25 on your $50 registration when you use the
+              code <b>MANAGAMES</b> at checkout
+            </li>
+          </ul>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
           <div className="col-span-1">

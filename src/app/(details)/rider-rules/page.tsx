@@ -1,3 +1,4 @@
+import { VideoEmbed } from "@/app/components/VideoEmbed";
 import { headerText } from "@/app/ui/fonts";
 import { ReactNode } from "react";
 
@@ -30,6 +31,12 @@ const rules: { title: string; description: ReactNode }[] = [
         vehicles pass, being cautious around harvest equipment, and keeping to
         the right especially over blind hills (most of our hills too steep to
         see over). No event or finisher patch is worth getting hurt over.
+        <br />
+        <br />
+        Jason from Gravel worlds has a great video detailing these rules!
+        <div className="max-w-lg mx-auto my-3">
+          <VideoEmbed url="https://www.youtube.com/embed/H3GLInxDWaM?si=Us2fjwIssuluegXg" />
+        </div>
       </>
     ),
   },
