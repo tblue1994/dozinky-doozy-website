@@ -113,7 +113,7 @@ export default function Home() {
               word="Dozinky"
               pronunciation="doh-ZHIN-kee"
               partOfSpeech="noun"
-              definition="A Slavic harvest festival celebrated across Central and Eastern
+              definition="A Czech and Slavic harvest festival celebrated across Central and Eastern
                 Europe with a variety of customs and traditions. One thing that all
                 of these festivals celebrate is the culmination of a hard
                 year's work and the rewards gained in return."
