@@ -46,6 +46,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 1080,
     height: 1080,
   },
+  {
+    name: "Anglers Allie",
+    url: "https://www.facebook.com/p/Anglers-Allie-100092405239388/",
+    image: "/angler-allie.jpg",
+    altText: "Anglers Allie logo",
+    width: 3072,
+    height: 2048,
+  },
 ];
 
 export default function Home() {

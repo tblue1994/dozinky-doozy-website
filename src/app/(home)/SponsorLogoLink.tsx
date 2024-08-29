@@ -18,7 +18,11 @@ export const SponsorLogoLink = ({
   height,
 }: SponsorLogoLinkProps) => {
   return (
-    <Link href={url} target="_blank" className="block basis-1/2 sm:basis-1/4">
+    <Link
+      href={url}
+      target="_blank"
+      className="block basis-1/2 sm:basis-1/4 m-0.5"
+    >
       <Image src={image} alt={altText} width={width} height={height} />
     </Link>
   );
