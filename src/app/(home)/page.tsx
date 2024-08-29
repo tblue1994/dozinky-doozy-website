@@ -31,6 +31,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 202,
   },
   {
+    name: "Paper Moon Pastries",
+    url: "https://www.papermoonpastries.com/",
+    image: "/paper-moon.png",
+    altText: "Paper Moon Pastries logo",
+    width: 1080,
+    height: 1080,
+  },
+  {
     name: "Bank of Prague",
     url: "https://www.bankofprague1.com/",
     image: "/bofp.png",
@@ -39,12 +47,12 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 392,
   },
   {
-    name: "Paper Moon Pastries",
-    url: "https://www.papermoonpastries.com/",
-    image: "/paper-moon.png",
-    altText: "Paper Moon Pastries logo",
-    width: 1080,
-    height: 1080,
+    name: "Anglers Allie",
+    url: "https://www.facebook.com/p/Anglers-Allie-100092405239388/",
+    image: "/angler-allie.jpg",
+    altText: "Anglers Allie logo",
+    width: 3072,
+    height: 2048,
   },
 ];
 
