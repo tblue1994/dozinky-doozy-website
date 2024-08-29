@@ -31,20 +31,20 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 202,
   },
   {
-    name: "Bank of Prague",
-    url: "https://www.bankofprague1.com/",
-    image: "/bofp.png",
-    altText: "Bank of Prague logo",
-    width: 424,
-    height: 392,
-  },
-  {
     name: "Paper Moon Pastries",
     url: "https://www.papermoonpastries.com/",
     image: "/paper-moon.png",
     altText: "Paper Moon Pastries logo",
     width: 1080,
     height: 1080,
+  },
+  {
+    name: "Bank of Prague",
+    url: "https://www.bankofprague1.com/",
+    image: "/bofp.png",
+    altText: "Bank of Prague logo",
+    width: 424,
+    height: 392,
   },
   {
     name: "Anglers Allie",
