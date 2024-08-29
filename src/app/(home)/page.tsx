@@ -38,6 +38,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 424,
     height: 392,
   },
+  {
+    name: "Paper Moon Pastries",
+    url: "https://www.papermoonpastries.com/",
+    image: "/paper-moon.png",
+    altText: "Paper Moon Pastries logo",
+    width: 1080,
+    height: 1080,
+  },
 ];
 
 export default function Home() {
@@ -104,6 +112,10 @@ export default function Home() {
             <li>
               Gravel Gals! Save $25 on your $50 registration when you use the
               code <b>MANAGAMES</b> at checkout
+            </li>
+            <li>
+              Bring your number plate into Paper Moon Pastries through the month
+              of October to receive a free treat!
             </li>
           </ul>
         </div>
