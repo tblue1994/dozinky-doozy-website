@@ -42,15 +42,35 @@ export default function Lodging() {
       <section>
         <h2 className={h2ClassNames}>Camping</h2>
         <p>
-          Tent and RV Camping is available at{" "}
           <Link
             href="https://lpnnrd.org/outdoor-recreation/czechland-lake-recreation-area/"
             target="_blank"
-            className="underline hover:text-venetian-red-600"
+            className="font-semibold underline hover:text-venetian-red-600"
           >
             Czechland Lake Recreation Area
-          </Link>
-          .
+          </Link>{" "}
+          • free tent camping and $18/night camper or tent hookups
+        </p>
+        <br />
+        <p>
+          <Link
+            href="https://lpnnrd.org/outdoor-recreation/lake-wanahoo/"
+            target="_blank"
+            className="font-semibold underline hover:text-venetian-red-600"
+          >
+            Lake Wanahoo
+          </Link>{" "}
+          • ~25 minute drive (near Wahoo) • Platte River North NRD has provided
+          us with free park passes and nights of camping. Please send an email
+          to{" "}
+          <a
+            className="underline hover:text-venetian-red-600"
+            href="mailto:dozinkydoozy@gmail.com"
+            target="_blank"
+          >
+            dozinkydoozy@gmail.com
+          </a>{" "}
+          to claim!
         </p>
       </section>
       <section>
