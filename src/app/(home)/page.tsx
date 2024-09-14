@@ -23,6 +23,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 423,
   },
   {
+    name: "Goodlife Cyclery",
+    url: "https://goodlifecyclery.com/",
+    image: "/goodlife-cyclery-1.png",
+    altText: "Goodlife Cyclery logo word mark",
+    width: 4005,
+    height: 1278,
+  },
+  {
     name: "Alvin Coffee",
     url: "https://www.instagram.com/alvin.coffee/",
     image: "/alvin-coffee.png",
@@ -49,7 +57,7 @@ const sponsors: SponsorLogoLinkProps[] = [
   {
     name: "Anglers Allie",
     url: "https://www.facebook.com/p/Anglers-Allie-100092405239388/",
-    image: "/angler-allie.jpg",
+    image: "/angler-allie.png",
     altText: "Anglers Allie logo",
     width: 3072,
     height: 2048,
@@ -107,7 +115,7 @@ export default function Home() {
         <div className="my-10">
           <h2 className="text-3xl text-center">Sponsors</h2>
           <p className="text-center mb-2">Thank you to all of our sponsors!</p>
-          <div className="flex flex-grow flex-wrap justify-center items-center">
+          <div className="flex flex-grow flex-wrap justify-center items-center mb-4">
             {sponsors.map((sponsor) => (
               <SponsorLogoLink key={sponsor.name} {...sponsor} />
             ))}
