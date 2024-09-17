@@ -176,7 +176,7 @@ const faqs: Faq[] = [
               the Dozinky Doozy
             </Link>
             , or come cheer on our cyclists as they start their adventure at
-            8am. They'll be making two more stops back through Czechland Lake,
+            8am. They will be making two more stops back through Czechland Lake,
             so swing by and see what gravel cycling is all about!
           </>
         ),
