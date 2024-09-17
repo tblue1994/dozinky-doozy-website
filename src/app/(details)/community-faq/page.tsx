@@ -21,8 +21,7 @@ const faqs: Faq[] = [
     question: "When and where will cyclists be?",
     answer: (
       <>
-        The official route will be released closer to the event date, and will
-        be found on our{" "}
+        The official route can be found on our{" "}
         <Link
           href="/routes"
           target="_blank"
@@ -30,7 +29,7 @@ const faqs: Faq[] = [
         >
           routes page
         </Link>
-        .
+        !
         <br />
         <br />
         The route will consist of three loops, all starting and ending at
@@ -150,13 +149,37 @@ const faqs: Faq[] = [
       },
       {
         question: "If you want to volunteer:",
-        answer:
-          "We will have a volunteer sign up page closer to race day. We can always use people to help run an aid station or get riders checked in.",
+        answer: (
+          <>
+            <Link
+              href="https://www.timetosignup.com/dozinkydoozy/sheet/1362236"
+              target="_blank"
+              className="underline hover:text-venetian-red-600"
+            >
+              Here is our volunteer sign up sheet
+            </Link>
+            . We can always use people to help run an aid station or get riders
+            checked in.
+          </>
+        ),
       },
       {
         question: "Everyone else:",
-        answer:
-          "Sign up if you are feeling adventurous and want to participate in the Dozinky Doozy, or come cheer on our cyclists as they start their adventure at 8am. They'll be making two more stops back through Czechland Lake, so swing by and see what gravel cycling is all about!",
+        answer: (
+          <>
+            <Link
+              href="https://www.bikereg.com/dozinky-doozy-gravel-challenge"
+              target="_blank"
+              className="underline hover:text-venetian-red-600"
+            >
+              Sign up if you are feeling adventurous and want to participate in
+              the Dozinky Doozy
+            </Link>
+            , or come cheer on our cyclists as they start their adventure at
+            8am. They'll be making two more stops back through Czechland Lake,
+            so swing by and see what gravel cycling is all about!
+          </>
+        ),
       },
     ],
   },
