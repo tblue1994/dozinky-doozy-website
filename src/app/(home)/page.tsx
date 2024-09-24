@@ -88,7 +88,8 @@ export default function Home() {
             Lincoln, NE. The route consists of three unique 40-mile loops, each
             starting and ending at Czechland Lake. Your journey will take you
             down dirt roads, over steep hills, and into the Platte River valley.
-            You will have 10 hours to complete the Doozy.
+            You will have 10 hours and 25 minutes to complete the Doozy (12
+            mph/pace).
           </p>
           <p className="my-2">
             This event is designed to challenge and inspire you. Finishing the
@@ -112,6 +113,25 @@ export default function Home() {
             <RegisterLink className="text-xl">2024 Registration</RegisterLink>
           </div>
         </div>
+        <br />
+        <br />
+        <div>
+          <h2 className="my-3 text-center text-3xl">Event Day Schedule</h2>
+          <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
+            <li>7 AM - Rider Check in @ Czechland Lake Picnic Shelter</li>
+            <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed ml-5">
+              <li>Kolaches and Cold Brew Available!</li>
+            </ul>
+            <li>8 AM - Dozinky Doozy Starts in South Parking Lot</li>
+            <li>
+              11 AM(ish) - Post Ride Meals Provided by Relish Catering available
+            </li>
+            <li>3 PM - Third (Loma) Loop Start Cutoff</li>
+            <li>6:25 PM - Doozy Finisher Patch Cutoff</li>
+          </ul>
+        </div>
+        <br />
+        <br />
         <div className="my-10">
           <h2 className="text-3xl text-center">Sponsors</h2>
           <p className="text-center mb-2">Thank you to all of our sponsors!</p>
@@ -126,8 +146,13 @@ export default function Home() {
               mention the Doozy
             </li>
             <li>
-              Gravel Gals! Save $25 on your $50 registration when you use the
-              code <b>MANAGAMES</b> at checkout
+              <s>
+                Gravel Gals! Save $25 on your $50 registration when you use the
+                code <b>MANAGAMES</b> at checkout
+              </s>
+              <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed ml-5">
+                <li>All codes have been claimed!</li>
+              </ul>
             </li>
             <li>
               Bring your number plate into Paper Moon Pastries through the month
