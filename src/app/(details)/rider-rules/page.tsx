@@ -67,13 +67,12 @@ const rules: { title: string; description: ReactNode }[] = [
     title: "Hustle",
     description: (
       <p>
-        You will have 10 hours to complete the Doozy. This time requires a 12
-        mph pace, but for good reason. We&apos;d like to have everyone back
-        before dark in order to limit cyclists on the road at night during
-        harvest.
+        You must ride at least at a 12 mph pace, but for good reason. We&apos;d
+        like to have everyone back before dark in order to limit cyclists on the
+        road at night during harvest.
         <br />
         <br />
-        This also means that you will need to start the third loop by 2:45pm. If
+        This also means that you will need to start the third loop by 3pm. If
         you&apos;d like to continue to ride the final loop past this time, you
         are free to do so but will no longer be participating in the Doozy.
         <br />
