@@ -71,7 +71,7 @@ export default function Home() {
       <div className="p-8 max-w-screen-lg mx-auto">
         <div className="text-justify">
           <h1 className="text-3xl mt-2 text-center">
-            Saturday, September 28, 2024, 8 AM
+            Saturday, September 27, 2025, 8 AM
           </h1>
           <h2 className="text-2xl my-2 text-center">
             <Link
@@ -110,7 +110,7 @@ export default function Home() {
             <li>And more to come!</li>
           </ul>
           <div className="mt-8 mb-4 w-fit mx-auto">
-            <RegisterLink className="text-xl">2024 Registration</RegisterLink>
+            <RegisterLink className="text-xl">2025 Registration</RegisterLink>
           </div>
         </div>
         <br />
