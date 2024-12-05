@@ -47,6 +47,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 1080,
   },
   {
+    name: "Eric Turner Photography",
+    url: "https://www.ericturner.photography/",
+    image: "/etp.png",
+    altText: "Eric Turner Photography logo",
+    width: 500,
+    height: 500,
+  },
+  {
     name: "Bank of Prague",
     url: "https://www.bankofprague1.com/",
     image: "/bofp.png",
