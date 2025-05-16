@@ -63,12 +63,12 @@ const sponsors: SponsorLogoLinkProps[] = [
     height: 392,
   },
   {
-    name: "Anglers Allie",
-    url: "https://www.facebook.com/p/Anglers-Allie-100092405239388/",
-    image: "/angler-allie.png",
-    altText: "Anglers Allie logo",
-    width: 3072,
-    height: 2048,
+    name: "All Day DTF",
+    url: "https://alldaydtf.com/",
+    image: "/allday.png",
+    altText: "All Day DTF logo",
+    width: 4501,
+    height: 3739,
   },
 ];
 
