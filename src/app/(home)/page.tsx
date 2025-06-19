@@ -70,6 +70,22 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 4501,
     height: 3739,
   },
+  {
+    name: "Katie Nieland Art",
+    url: "https://katienielandart.bigcartel.com/",
+    image: "/kn.png",
+    altText: "Katie Nieland Art Logo",
+    width: 1292,
+    height: 632,
+  },
+  {
+    name: "White Elm Brewery",
+    url: "http://whiteelmbrewing.com/",
+    image: "/we.png",
+    altText: "White Elm Brewery logo",
+    width: 500,
+    height: 499,
+  },
 ];
 
 export default function Home() {
