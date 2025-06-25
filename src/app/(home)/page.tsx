@@ -86,6 +86,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 500,
     height: 499,
   },
+  {
+    name: "Wahoo Locker",
+    url: "https://wahoolocker.com/",
+    image: "/wl.png",
+    altText: "Wahoo Locker logo",
+    width: 625,
+    height: 263,
+  },
 ];
 
 export default function Home() {
