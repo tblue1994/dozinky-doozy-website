@@ -3,7 +3,7 @@ import { bodyText } from "./ui/fonts";
 import "./globals.css";
 import { NavBar } from "./components/NavBar";
 import clsx from "clsx";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 
 const description =
   "Come join us in riding 120 miles of beautiful gravel in the Bohemian Alps.";
@@ -47,6 +47,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={bodyClassNames}>{children}</body>
       <GoogleAnalytics gaId="G-WY2P6T467V" />
+      <GoogleTagManager gtmId="GTM-KS32C92K"></GoogleTagManager>
     </html>
   );
 }
