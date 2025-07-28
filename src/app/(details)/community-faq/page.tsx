@@ -33,12 +33,11 @@ const faqs: Faq[] = [
         <br />
         <br />
         The route will consist of three loops, all starting and ending at
-        Czechland Lake. The first will pass through Abie, the second through
-        Weston, and the third through Loma. The event starts at 8am and our
-        event has a sharp cutoff at 6pm in an attempt to limit the number of
-        cyclists on the road after dark during harvest.
+        Czechland Lake. The event starts at 8am and has a sharp cutoff at 6pm in
+        an attempt to limit the number of cyclists on the road after dark during
+        harvest.
         <br />
-        <table className="border-collapse border-spacing-2 border border-slate-500 table-auto mx-auto my-2">
+        {/* <table className="border-collapse border-spacing-2 border border-slate-500 table-auto mx-auto my-2">
           <caption className="caption-top mb-2">
             An approximation of when and where our cyclists will be.
           </caption>
@@ -86,7 +85,7 @@ const faqs: Faq[] = [
               <td className="border px-2">X</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </>
     ),
   },

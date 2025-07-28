@@ -14,13 +14,21 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 400,
     height: 400,
   },
+  //   {
+  //     name: "Mana Games",
+  //     url: "https://mana-games.com/",
+  //     image: "/mana-games.png",
+  //     altText: "Mana Games logo and word mark",
+  //     width: 589,
+  //     height: 423,
+  //   },
   {
-    name: "Mana Games",
-    url: "https://mana-games.com/",
-    image: "/mana-games.png",
-    altText: "Mana Games logo and word mark",
-    width: 589,
-    height: 423,
+    name: "Wahoo Locker",
+    url: "https://wahoolocker.com/",
+    image: "/wl.png",
+    altText: "Wahoo Locker logo",
+    width: 625,
+    height: 263,
   },
   {
     name: "Goodlife Cyclery",
@@ -86,14 +94,6 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 500,
     height: 499,
   },
-  {
-    name: "Wahoo Locker",
-    url: "https://wahoolocker.com/",
-    image: "/wl.png",
-    altText: "Wahoo Locker logo",
-    width: 625,
-    height: 263,
-  },
 ];
 
 export default function Home() {
@@ -102,6 +102,9 @@ export default function Home() {
       <LogoTaglineHeader />
       <div className="p-8 max-w-screen-lg mx-auto">
         <div className="text-justify">
+          <div className="mt-4 mb-8 w-fit mx-auto ">
+            <RegisterLink className="text-2xl">2025 Registration</RegisterLink>
+          </div>
           <h1 className="text-3xl mt-2 text-center">
             Saturday, September 27, 2025, 8 AM
           </h1>
@@ -114,38 +117,46 @@ export default function Home() {
               Czechland Lake Recreation Area, Prague, NE
             </Link>
           </h2>
+          <h2 className="text-2xl my-2 text-center">
+            200km - 11,000 ft of elevation - 10 hours
+          </h2>
           <p className="my-2">
-            The Dozinky Doozy is a 200km (120-mile) Harvest Gravel Cycling
+            The Dozinky Doozy is a 200km (125-mile) Harvest Gravel Cycling
             Challenge through the stunning Bohemian Alps, located north of
-            Lincoln, NE. The route consists of three unique 40-mile loops, each
-            starting and ending at Czechland Lake. Your journey will take you
-            down dirt roads, over steep hills, and into the Platte River valley.
-            You will have 10 hours and 25 minutes to complete the Doozy (12
-            mph/pace).
+            Lincoln, NE. The route is clover-leaf shaped, and consists of three
+            unique 40-mile loops, each starting and ending at Czechland Lake.
+            Your journey will take you down dirt roads, over steep hills, and
+            into the Platte River valley. You will have 10 hours and 25 minutes
+            to complete the Doozy (12 mph pace).
           </p>
           <p className="my-2">
-            This event is designed to challenge and inspire you. Finishing the
-            Dozinky Doozy will be an accomplishment you can be proud of.
-            Remember, harvest is a time to reap what you sow. What seeds will
-            you sow this year? Embrace the challenge and join us for an
-            unforgettable adventure!
+            <strong>New in 2025</strong> - A 3-person relay! Grab two friends
+            and each tackle one loop of the clover-leaf course before passing
+            the torch back at Czechland Lake. Whether you&apos;re racing hard or
+            just along for the ride, it&apos;s the perfect way to share the
+            challenge and soak in the scenery together.
+          </p>
+          <p className="my-2">
+            Finishing the Dozinky Doozy is an an accomplishment to be proud of!
+            Remember, harvest is a time to <strong>Reap What You Sow</strong>.
+            What seeds will you sow this year? Embrace the effort and join us
+            for an unforgettable challenge!
           </p>
           <h3 className="my-3 text-lg">$50 registration fee includes:</h3>
           <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed">
             <li>Post ride meal and beverages</li>
             <li>Awesome Finisher Patches for all Doozy Finishers</li>
-            <li>Custom award for &quot;unofficial&quot; 1st place</li>
+            <li>
+              Custom award for &quot;unofficial&quot; 1st place
+              Men&apos;s/Women&apos;s
+            </li>
             <li>
               Fully stocked checkpoint at Czechland Lake and a limited SAG stop
               on each loop
             </li>
             <li>And more to come!</li>
           </ul>
-          <div className="mt-8 mb-4 w-fit mx-auto">
-            <RegisterLink className="text-xl">2025 Registration</RegisterLink>
-          </div>
         </div>
-        <br />
         <br />
         <div>
           <h2 className="my-3 text-center text-3xl">Event Day Schedule</h2>
@@ -155,10 +166,14 @@ export default function Home() {
               <li>Kolaches and Cold Brew Available!</li>
             </ul>
             <li>8 AM - Dozinky Doozy Starts in South Parking Lot</li>
+            <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed ml-5">
+              <li>Featuring our tractor lead-out!</li>
+            </ul>
             <li>
-              11 AM(ish) - Post Ride Meals Provided by Relish Catering available
+              11 AM(ish) - Post Ride Meals Provided by The Wahoo Locker
+              available
             </li>
-            <li>3 PM - Third (Loma) Loop Start Cutoff</li>
+            <li>3 PM - Third Loop Start Cutoff</li>
             <li>6:25 PM - Doozy Finisher Patch Cutoff</li>
           </ul>
         </div>
@@ -176,15 +191,6 @@ export default function Home() {
             <li>
               Save $50 on 3D or Virtual bike fit with Link Cycling when you
               mention the Doozy
-            </li>
-            <li>
-              <s>
-                Gravel Gals! Save $25 on your $50 registration when you use the
-                code <b>MANAGAMES</b> at checkout
-              </s>
-              <ul className="list-image-[url(/flower.svg)] list-inside w-fit text-left leading-relaxed ml-5">
-                <li>All codes have been claimed!</li>
-              </ul>
             </li>
             <li>
               Bring your number plate into Paper Moon Pastries through the month
