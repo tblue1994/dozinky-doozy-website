@@ -8,13 +8,13 @@ const rules: { title: string; description: ReactNode }[] = [
     description: (
       <>
         Absolutely! The full Doozy is 120 miles, but you can always ride less.
-        The route consists of three unique 40-mile loops, so after 40 and 80
-        miles, you&apos;ll be right back at the start/finish line. This is a
-        perfect time to evaluate if you&apos;d like to continue with the Doozy.
-        Regardless of how far you ride, we&apos;ll have kolaches and cold brew
-        to start your ride and a meal waiting for you at the finish. Whatever
-        your personal finish line, we&apos;ll be happy as long as you challenge
-        yourself!
+        The route is a clover-leaf, and consists of three unique 40-mile loops,
+        so after 40 and 80 miles, you&apos;ll be right back at the start/finish
+        line. This is a perfect time to evaluate if you&apos;d like to continue
+        with the Doozy. Regardless of how far you ride, we&apos;ll have kolaches
+        and cold brew to start your ride and a meal waiting for you at the
+        finish. Whatever your personal finish line, we&apos;ll be happy as long
+        as you challenge yourself!
       </>
     ),
   },
@@ -26,6 +26,29 @@ const rules: { title: string; description: ReactNode }[] = [
         this opportunity to get anything you need from your vehicles. We will
         have crates at Czechland, so you can leave a drop bag there and retrieve
         it when you return before heading out on a new loop.
+      </>
+    ),
+  },
+  {
+    title: "What kind of Checkpoints do you have?",
+    description: (
+      <>
+        2 Kinds - limited SAG stops and book checkpoints.
+        <br />
+        <br />
+        <strong>Limited SAGs</strong> will be available in select small towns
+        along the route. These stops will have water and a small supply of
+        snacks. Stopping is optional. A fully stocked aid station will be
+        available at Czechland Lake between loops.
+        <br />
+        <br />
+        <strong>Book Checkpoints</strong> are located on each loop and will be
+        denoted on all non-public routes (so be sure to RSVP for the RWGPS event
+        or check your email!) Each book is placed at a notable landmark or
+        scenic location along the course. Every rider will have an odd-numbered
+        bib. When you reach a book, tear out the page that matches your bib
+        number. After completing each loop, you must check in at Czechland HQ
+        and turn in your pages. Failure to do so will result in a DNF!
       </>
     ),
   },

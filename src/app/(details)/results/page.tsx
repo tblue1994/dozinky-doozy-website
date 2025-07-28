@@ -15,6 +15,23 @@ export default function Results() {
       >
         2024 Results
       </Link>
+      <br />
+      <h1 className={`${headerText.className} text-4xl`}>Photos</h1>
+      <h2 className={h2ClassNames}>Steve Morin - 9 hours 8 minutes - 2024</h2>
+      <Link
+        href="https://gallery.ericturner.photography/-dozinkydoozy/gallery"
+        target="_blank"
+        className={`${h2ClassNames} underline hover:text-venetian-red-600`}
+      >
+        2024 - Eric Turner Photography
+      </Link>
+      <Link
+        href="https://matttakespictures.zenfoliosite.com/dozinky-doozy-2024"
+        target="_blank"
+        className={`${h2ClassNames} underline hover:text-venetian-red-600`}
+      >
+        2024 - Matt Pearson Photography
+      </Link>
     </div>
   );
 }

@@ -54,6 +54,22 @@ const rules: { title: string; description: ReactNode }[] = [
     ),
   },
   {
+    title: "Don't skip your pages",
+    description: (
+      <>
+        Book Checkpoints are placed at a notable landmark or scenic location
+        along the course. Every rider will have an odd-numbered bib. When you
+        reach a book, tear out the page that matches your bib number. After
+        completing each loop, you must check in at Czechland HQ and turn in your
+        pages.
+        <br />
+        <br />
+        Seriously, don&apos;t skip your pages.{" "}
+        <strong>No pages, no finish!</strong>
+      </>
+    ),
+  },
+  {
     title: "Gear",
     description: (
       <>
