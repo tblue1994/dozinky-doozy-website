@@ -132,9 +132,9 @@ export default function Home() {
           <p className="my-2">
             <strong>New in 2025</strong> - A 3-person relay! Grab two friends
             and each tackle one loop of the clover-leaf course before passing
-            the torch back at Czechland Lake. Whether you're racing hard or just
-            along for the ride, it's the perfect way to share the challenge and
-            soak in the scenery together.
+            the torch back at Czechland Lake. Whether you&apos;re racing hard or
+            just along for the ride, it&apos;s the perfect way to share the
+            challenge and soak in the scenery together.
           </p>
           <p className="my-2">
             Finishing the Dozinky Doozy is an an accomplishment to be proud of!
