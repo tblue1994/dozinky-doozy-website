@@ -14,22 +14,15 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 400,
     height: 400,
   },
-  //   {
-  //     name: "Mana Games",
-  //     url: "https://mana-games.com/",
-  //     image: "/mana-games.png",
-  //     altText: "Mana Games logo and word mark",
-  //     width: 589,
-  //     height: 423,
-  //   },
   {
-    name: "Wahoo Locker",
-    url: "https://wahoolocker.com/",
-    image: "/wl.png",
-    altText: "Wahoo Locker logo",
-    width: 625,
-    height: 263,
+    name: "Mana Games",
+    url: "https://mana-games.com/",
+    image: "/mana-games.png",
+    altText: "Mana Games logo and word mark",
+    width: 589,
+    height: 423,
   },
+
   {
     name: "Goodlife Cyclery",
     url: "https://goodlifecyclery.com/",
@@ -93,6 +86,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     altText: "White Elm Brewery logo",
     width: 500,
     height: 499,
+  },
+  {
+    name: "Wahoo Locker",
+    url: "https://wahoolocker.com/",
+    image: "/wl.png",
+    altText: "Wahoo Locker logo",
+    width: 625,
+    height: 263,
   },
 ];
 
