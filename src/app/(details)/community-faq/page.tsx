@@ -37,7 +37,7 @@ const faqs: Faq[] = [
         an attempt to limit the number of cyclists on the road after dark during
         harvest.
         <br />
-        {/* <table className="border-collapse border-spacing-2 border border-slate-500 table-auto mx-auto my-2">
+        <table className="border-collapse border-spacing-2 border border-slate-500 table-auto mx-auto my-2">
           <caption className="caption-top mb-2">
             An approximation of when and where our cyclists will be.
           </caption>
@@ -49,7 +49,7 @@ const faqs: Faq[] = [
               <th className="border px-2">Slow (10 mph)</th>
             </tr>
             <tr>
-              <td className="border px-2">Abie</td>
+              <td className="border px-2">Linwood</td>
               <td className="border px-2">9 AM</td>
               <td className="border px-2">9:30 AM</td>
               <td className="border px-2">10 AM</td>
@@ -61,7 +61,7 @@ const faqs: Faq[] = [
               <td className="border px-2">12 PM</td>
             </tr>
             <tr>
-              <td className="border px-2">Weston</td>
+              <td className="border px-2">Touhy</td>
               <td className="border px-2">11 AM</td>
               <td className="border px-2">12 PM</td>
               <td className="border px-2">2 PM</td>
@@ -73,7 +73,7 @@ const faqs: Faq[] = [
               <td className="border px-2">4 PM</td>
             </tr>
             <tr>
-              <td className="border px-2">Loma</td>
+              <td className="border px-2">Octavia</td>
               <td className="border px-2">1 PM</td>
               <td className="border px-2">2:45 PM</td>
               <td className="border px-2">X</td>
@@ -85,7 +85,7 @@ const faqs: Faq[] = [
               <td className="border px-2">X</td>
             </tr>
           </tbody>
-        </table> */}
+        </table>
       </>
     ),
   },

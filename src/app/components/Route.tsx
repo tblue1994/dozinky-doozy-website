@@ -24,7 +24,7 @@ export const Route = (props: RouteProps) => {
     iframeClassName
   );
   return (
-    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
+    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 mb-3">
       <div>
         <h2 className="text-2xl font-bold">{routeTitle}</h2>
         <p>{routeDescription}</p>
