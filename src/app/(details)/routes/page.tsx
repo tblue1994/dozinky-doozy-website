@@ -45,14 +45,32 @@ const trainingRoutes = [
     routeIframeSrc:
       "https://ridewithgps.com/embeds?type=route&id=28345766&sampleGraph=true",
   },
+  {
+    routeTitle: "Dozinky Doozy Gravel Challenge 2024",
+    routeDescription: `The route consists of three unique 40-mile loops, each starting and ending at Czechland Lake. 
+    Your journey will take you down dirt roads, over steep hills, and into the Platte River valley. The loops pass through the towns of Abie, Weston and Loma.`,
+    routeIframeSrc:
+      "https://ridewithgps.com/embeds?type=route&id=48463733&sampleGraph=true",
+  },
 ];
 
 var doozyRoute = {
   routeTitle: "",
-  routeDescription: `The route consists of three unique 40-mile loops, each starting and ending at Czechland Lake. 
-    Your journey will take you down dirt roads, over steep hills, and into the Platte River valley. The loops pass through the towns of Abie, Weston and Loma.`,
+  routeDescription: (
+    <>
+      Our classic clover-leaf course, showcasing the very best of the Bohemain
+      Alps! These 40-mile loops each start and end at Czechland Lake. Route
+      contains gnarly climbs and epic dirt roads. The loops pass through the
+      towns of Abie, Touhy, Octavia, Linwood and Bruno.
+      <br />
+      <br />
+      <strong>RIDERS</strong>: Please note, you should use the maps found in the
+      RWGPS event, as it will have additional information (like{" "}
+      <strong>book locations</strong>), and turn by turn directions!
+    </>
+  ),
   routeIframeSrc:
-    "https://ridewithgps.com/embeds?type=route&id=48463733&sampleGraph=true",
+    "https://ridewithgps.com/embeds?type=route&id=52592947&sampleGraph=true",
 };
 
 const routeIframeClassName = "border-none";
@@ -61,7 +79,7 @@ export default function Routes() {
     <div className="flex flex-col gap-6">
       <section>
         <h1 className={`${headerText.className} text-4xl mb-3`}>
-          Dozinky Doozy Gravel Challenge 2024
+          Dozinky Doozy Gravel Challenge 2025
         </h1>
         <Route
           key={doozyRoute.routeTitle}
