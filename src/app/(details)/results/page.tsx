@@ -28,6 +28,13 @@ export default function Results() {
       <h1 className={`${headerText.className} text-4xl`}>Photos</h1>
       <h2 className={h2ClassNames}>2025</h2>
       <Link
+        href="https://gallery.ericturner.photography/-dozinkydoozy/gallery"
+        target="_blank"
+        className={`${h2ClassNames} underline hover:text-venetian-red-600`}
+      >
+        2025 - Eric Turner Photography
+      </Link>
+      <Link
         href="https://matttakespictures.zenfoliosite.com/dozinky-doozy-2025"
         target="_blank"
         className={`${h2ClassNames} underline hover:text-venetian-red-600`}
