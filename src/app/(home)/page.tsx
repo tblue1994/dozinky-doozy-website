@@ -104,7 +104,7 @@ export default function Home() {
       <div className="p-8 max-w-screen-lg mx-auto">
         <div className="text-justify">
           <div className="mt-4 mb-8 w-fit mx-auto ">
-            <RegisterLink className="text-2xl">2025 Registration</RegisterLink>
+            <RegisterLink className="text-2xl">2026 Registration</RegisterLink>
           </div>
           <h1 className="text-3xl mt-2 text-center">
             Saturday, October 3, 2026, 8 AM
