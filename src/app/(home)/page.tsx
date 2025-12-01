@@ -107,7 +107,7 @@ export default function Home() {
             <RegisterLink className="text-2xl">2025 Registration</RegisterLink>
           </div>
           <h1 className="text-3xl mt-2 text-center">
-            Saturday, September 27, 2025, 8 AM
+            Saturday, October 3, 2026, 8 AM
           </h1>
           <h2 className="text-2xl my-2 text-center">
             <Link

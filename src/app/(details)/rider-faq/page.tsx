@@ -80,7 +80,7 @@ const rules: { title: string; description: ReactNode }[] = [
           <li>
             <strong>Event Timing:</strong> 80% of the corn and soybean harvest
             happens in October, with the busiest corn harvest date being October
-            21st. By holding our event in September, the harvest should just be
+            21st. By holding our event in early fall, the harvest should just be
             starting rather than being in full swing. This should reduce the
             overall number of trucks on the road.
           </li>
