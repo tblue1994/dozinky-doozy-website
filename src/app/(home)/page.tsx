@@ -95,6 +95,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 625,
     height: 263,
   },
+  {
+    name: "M Grills & Blazn Grills",
+    url: "https://mgrills.com/",
+    image: "/mgrills.png",
+    altText: "M Grills logo word mark",
+    width: 373,
+    height: 126,
+  },
 ];
 
 export default function Home() {
