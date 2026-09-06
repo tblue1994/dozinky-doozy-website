@@ -52,6 +52,13 @@ const trainingRoutes = [
     routeIframeSrc:
       "https://ridewithgps.com/embeds?type=route&id=48463733&sampleGraph=true",
   },
+  {
+    routeTitle: "Dozinky Doozy Gravel Challenge 2025",
+    routeDescription: `The route consists of three unique 40-mile loops, each starting and ending at Czechland Lake. 
+    Your journey will take you down dirt roads, over steep hills, and into the Platte River valley. The loops pass through the towns of Linwood, Touhy and Octavia.`,
+    routeIframeSrc:
+      "https://ridewithgps.com/embeds?type=route&id=52592947&sampleGraph=true",
+  },
 ];
 
 var doozyRoute = {
@@ -61,7 +68,7 @@ var doozyRoute = {
       Our classic clover-leaf course, showcasing the very best of the Bohemain
       Alps! These 40-mile loops each start and end at Czechland Lake. Route
       contains gnarly climbs and epic dirt roads. The loops pass through the
-      towns of Abie, Touhy, Octavia, Linwood and Bruno.
+      towns of Morse Bluff, Malmo, and Brainard.
       <br />
       <br />
       <strong>RIDERS</strong>: Please note, you should use the maps found in the
@@ -70,7 +77,7 @@ var doozyRoute = {
     </>
   ),
   routeIframeSrc:
-    "https://ridewithgps.com/embeds?type=route&id=52592947&sampleGraph=true",
+    "https://ridewithgps.com/embeds?type=route&id=57025898&sampleGraph=true",
 };
 
 const routeIframeClassName = "border-none";
@@ -79,7 +86,7 @@ export default function Routes() {
     <div className="flex flex-col gap-6">
       <section>
         <h1 className={`${headerText.className} text-4xl mb-3`}>
-          Dozinky Doozy Gravel Challenge 2025
+          Dozinky Doozy Gravel Challenge 2026
         </h1>
         <Route
           key={doozyRoute.routeTitle}
