@@ -11,6 +11,21 @@ const hotels20 = [
   },
 ];
 
+const hotels30 = [
+  {
+    name: "Fremont Holiday Inn",
+    address: "2415 N Lincoln Ave, Fremont, NE 68025",
+    phone: "(402) 753-3850",
+    url: "https://www.ihg.com/holidayinnexpress/hotels/us/en/fremont/fetne/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-FETNE",
+  },
+  {
+    name: "Baymont by Wyndham Fremont",
+    address: "2700 Diers Pkwy, Fremont, NE 68025",
+    phone: "(402) 512-0641",
+    url: "https://www.wyndhamhotels.com/baymont/fremont-nebraska/baymont-inn-and-suites-fremont/overview?CID=LC:cfixxwa8fefdt79:52168&iata=00093796",
+  },
+];
+
 const hotels40 = [
   {
     name: "Holiday Inn Express & Suites Lincoln I-80",
@@ -79,6 +94,14 @@ export default function Lodging() {
         <h3 className={`${h3ClassNames} mt-4`}>~20 Minute Drive</h3>
         <ul>
           {hotels20.map((h) => (
+            <li key={h.name} className="my-4">
+              <LodgingItem {...h} />
+            </li>
+          ))}
+        </ul>
+        <h3 className={`${h3ClassNames} mt-8`}>~30 Minute Drive</h3>
+        <ul>
+          {hotels30.map((h) => (
             <li key={h.name} className="my-4">
               <LodgingItem {...h} />
             </li>

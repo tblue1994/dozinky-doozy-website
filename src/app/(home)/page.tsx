@@ -182,8 +182,8 @@ export default function Home() {
               11 AM(ish) - Post Ride Meals Provided by The Wahoo Locker
               available
             </li>
-            <li>3 PM - Third Loop Start Cutoff</li>
-            <li>6:25 PM - Doozy Finisher Patch Cutoff</li>
+            <li>2:55 PM - Third Loop Start Cutoff</li>
+            <li>6:22 PM - Doozy Finisher Patch Cutoff</li>
           </ul>
         </div>
         <br />
