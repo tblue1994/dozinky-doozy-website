@@ -7,7 +7,7 @@ const rules: { title: string; description: ReactNode }[] = [
       "The Doozy sounds fun, but I don't know that I can ride 120 miles. Should I still sign up?",
     description: (
       <>
-        Absolutely! The full Doozy is 120 miles, but you can always ride less.
+        Absolutely! The full Doozy is 120+ miles, but you can always ride less.
         The route is a clover-leaf, and consists of three unique 40-mile loops,
         so after 40 and 80 miles, you&apos;ll be right back at the start/finish
         line. This is a perfect time to evaluate if you&apos;d like to continue

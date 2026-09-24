@@ -39,14 +39,14 @@ const sponsors: SponsorLogoLinkProps[] = [
     width: 321,
     height: 202,
   },
-  {
-    name: "Paper Moon Pastries",
-    url: "https://www.papermoonpastries.com/",
-    image: "/paper-moon.png",
-    altText: "Paper Moon Pastries logo",
-    width: 1080,
-    height: 1080,
-  },
+  // {
+  //   name: "Paper Moon Pastries",
+  //   url: "https://www.papermoonpastries.com/",
+  //   image: "/paper-moon.png",
+  //   altText: "Paper Moon Pastries logo",
+  //   width: 1080,
+  //   height: 1080,
+  // },
   {
     name: "Eric Turner Photography",
     url: "https://www.ericturner.photography/",
@@ -182,8 +182,8 @@ export default function Home() {
               11 AM(ish) - Post Ride Meals Provided by The Wahoo Locker
               available
             </li>
-            <li>3 PM - Third Loop Start Cutoff</li>
-            <li>6:25 PM - Doozy Finisher Patch Cutoff</li>
+            <li>2:55 PM - Third Loop Start Cutoff</li>
+            <li>6:22 PM - Doozy Finisher Patch Cutoff</li>
           </ul>
         </div>
         <br />
@@ -201,10 +201,10 @@ export default function Home() {
               Save $50 on 3D or Virtual bike fit with Link Cycling when you
               mention the Doozy
             </li>
-            <li>
+            {/* <li>
               Bring your number plate into Paper Moon Pastries through the month
               of October to receive a free treat!
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
