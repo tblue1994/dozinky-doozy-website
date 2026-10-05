@@ -14,7 +14,7 @@ export default function Results() {
         Rachel Vanwormer - 8 hours 59 minutes - 2026
       </h2>
       <Link
-        href="/results-2026.pdf"
+        href="/2026-results.pdf"
         target="_blank"
         className={`${h2ClassNames} underline hover:text-venetian-red-600`}
       >
