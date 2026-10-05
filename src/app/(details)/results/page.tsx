@@ -8,7 +8,7 @@ export default function Results() {
     <div className="flex flex-col gap-6 w-fit mx-auto">
       <h1 className={`${headerText.className} text-4xl`}>Course Record</h1>
       <h2 className={h2ClassNames}>
-        Stephano Porter - 6 hours 37 minutes - 2026
+        Jonathon Wait - 6 hours 37 minutes - 2026
       </h2>
       <h2 className={h2ClassNames}>
         Rachel Vanwormer - 8 hours 59 minutes - 2026
